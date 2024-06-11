@@ -2,16 +2,18 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./Button.css";
 
+// PrimaryButton component
 const Button = ({
   label,
   onClick,
   variant,
   className,
   styleName = "radius-default",
+  style,
 }) => {
   const classNames = `btn ${variant} ${className} ${styleName}`;
   return (
-    <button className={classNames} onClick={onClick}>
+    <button className={classNames} onClick={onClick} style={style}>
       {label}
     </button>
   );
@@ -23,10 +25,81 @@ Button.propTypes = {
   variant: PropTypes.string,
   className: PropTypes.string,
   styleName: PropTypes.string,
+  style: PropTypes.object,
 };
 
 Button.defaultProps = {
   variant: "btn--primary",
+  className: "btn-padding",
+  styleName: "radius-default",
+};
+
+// OutlinedButton component
+export const OutlinedButton = ({
+  label,
+  onClick,
+  variant,
+  className,
+  styleName = "radius-default",
+  style,
+}) => {
+  const classNames = `btn ${variant} ${className} ${styleName}`;
+  const { outlineColor, ...restStyle } = style;
+  const buttonStyle = {
+    border: outlineColor ? `1px solid ${outlineColor}` : undefined,
+    ...restStyle,
+  };
+
+  return (
+    <button className={classNames} onClick={onClick} style={buttonStyle}>
+      {label}
+    </button>
+  );
+};
+
+OutlinedButton.propTypes = {
+  label: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
+  variant: PropTypes.string,
+  className: PropTypes.string,
+  styleName: PropTypes.string,
+  style: PropTypes.object,
+};
+
+OutlinedButton.defaultProps = {
+  variant: "btn--primary",
+  className: "btn-padding",
+  styleName: "radius-default",
+};
+
+// DisabledButton component
+export const DisabledButton = ({
+  label,
+  onClick,
+  className,
+  styleName,
+  style,
+}) => (
+  <Button
+    label={label}
+    onClick={onClick}
+    variant="btn--disabled"
+    className={className}
+    styleName={styleName}
+    style={style}
+    disabled
+  />
+);
+
+DisabledButton.propTypes = {
+  label: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
+  className: PropTypes.string,
+  styleName: PropTypes.string,
+  style: PropTypes.object,
+};
+
+DisabledButton.defaultProps = {
   className: "btn-padding",
   styleName: "radius-default",
 };

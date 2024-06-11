@@ -4,7 +4,7 @@ import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
 
 # Welcome to My Storybook Component Library 🌟
 
-Welcome to the Storybook Component Library, your starting point for building beautiful and efficient user interfaces. This library showcases a variety of components, each designed with customizability and ease of use in mind.
+This Storybook Component Library is your starting point for building beautiful and efficient user interfaces. This library showcases a variety of components, each designed with customizability and ease of use in mind.
 
 <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', marginBottom: '40px' }}>
 
@@ -114,20 +114,59 @@ Welcome to the Storybook Component Library, your starting point for building bea
 
 ## Why Use This Library?
 
-- **Customizability**: Tailor components to fit your design needs.
-- **Efficiency**: Speed up your development with ready-to-use components.
-- **Consistency**: Maintain UI consistency across your projects.
+- **Efficiency and Speed**: Accelerate the development and deployment of features with reusable, well-documented components.
+- **Consistent Design**: Maintain visual consistency across all projects with a shared design language that enhances collaboration between designers and developers.
+- **Technology Compatibility**: Built with CSS at its core, our components are easily adaptable to various frameworks, including React and CSS-in-JS, ensuring flexibility in your tech stack.
+
+## Accessibility Commitment
+
+This Storybook Component Library is designed with accessibility as a foundational principle. Here's how we ensure our components are accessible to everyone:
+
+- **Keyboard Navigation**: All components can be fully navigated using a keyboard, supporting accessibility standards for interactive elements.
+- **ARIA Attributes**: I integrated ARIA (Accessible Rich Internet Applications) attributes to enhance accessibility and provide essential information to assistive technologies, helping users with disabilities.
+- **Color Contrast**: I adhered to WCAG (Web Content Accessibility Guidelines) standards for color contrast to ensure that all text is readable for users with color vision deficiencies.
+
+These features aim to make this library usable by as wide an audience as possible, embodying my commitment to inclusivity in software design.
 
 ## Get Started
 
-To begin using these components in your projects, simply install the library and include the components you need:
+### For Development
+
+To set up the development environment and start using these components in your projects, you need to clone the repository and install the dependencies:
 
 ```bash
-npm install my-storybook-library
+git clone https://github.com/btims512/storybook-library.git
+cd storybook-library
+npm install
+```
+
+After cloning the repository and installing the dependencies, you can start the Storybook server:
+
+```bash
+npm run storybook
+```
+
+This will start the Storybook server and open it in your default web browser.
+
+### For Production
+
+To use the components from this library in your own project, you can install it as an npm package.
+
+```bash
+npm install your-library-name
+```
+
+After installing, you can import and use the components in your project:
+
+```bash
+import { Button } from 'your-library-name';
+
+// Use Button in their component
+<Button label="Click me" onClick={() => console.log('Button clicked')} />
 ```
 
 ## Contribution
 
 Interested in contributing? Check the repository on GitHub and submit your pull requests or issues.
 
-Thank you for visiting my Storybook. Explore and enjoy the power of reusable components!
+##### Thank you for visiting my Storybook. Explore and enjoy the power of reusable components!
