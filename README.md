@@ -8,7 +8,7 @@ import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
 
 Hello! I’m excited to present my Storybook Component Library, a project born from my passion to learn and master Storybook as a powerful tool for building and showcasing UI components. This library not only demonstrates my ability to utilize advanced frontend technologies but also serves as a portfolio to potential employers looking to understand my skills and capabilities in real-world applications.
 
-![Banner Image](/banner.jpg)
+![Banner Image](public/banner.jpg)
 
 ### Why This Project?
 
@@ -22,7 +22,7 @@ Through this project, I aimed to:
 
 This project was built using a robust set of technologies chosen for their popularity, performance, and relevance in modern web development:
 
-![Banner Image](/tech-stack.png)
+![Tech Stack Image](public/tech-stack.png)
 
 - **React**: Utilized for its powerful component-based architecture.
 - **Storybook**: Chosen for its excellent UI component visualization and testing capabilities.
