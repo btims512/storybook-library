@@ -1,0 +1,197 @@
+/* Color Variables */
+:root {
+  --primary-brand: #096FFA;
+  --black: #111111;
+  --gray: #999999;
+  --light-gray: #D6D6D6;
+  --snow: #FAFAFA;
+  --white: #FFFFFF;
+}
+
+.primary-brand {
+  color: var(--primary-brand);
+}
+
+.black {
+  color: var(--black);
+}
+
+.gray {
+  color: var(--gray);
+}
+
+.light-gray {
+  color: var(--light-gray);
+}
+
+.snow {
+  color: var(--snow);
+}
+
+.white {
+  color: var(--white);
+}
+
+/* Semibold */
+@font-face {
+  font-family: 'SF Pro Display Semibold';
+  src: url('../public/fonts/SF-Pro-Display-Semibold.otf') format('truetype');
+  font-weight: 600;  
+  font-style: normal;
+}
+
+/* Light */
+@font-face {
+  font-family: 'SF Pro Display Light';
+  src: url('../public/fonts/SF-Pro-Display-Light.otf') format('truetype');
+  font-weight: 300; 
+  font-style: normal;
+}
+
+/* Regular */
+@font-face {
+  font-family: 'SF Pro Text Regular';
+  src: url('../public/fonts/SF-Pro-Text-Regular.otf') format('truetype'); 
+  font-weight: 400; 
+  font-style: normal;
+}
+
+/* Medium */
+@font-face {
+  font-family: 'SF Pro Text Medium';
+  src: url('../public/fonts/SF-Pro-Text-Medium.otf') format('truetype');
+  font-weight: 500;  
+  font-style: normal;
+}
+
+.text-default {
+  margin: 0;
+}
+
+/* Spacing Units */
+.s-0 {
+  padding: 0px;
+}
+
+.s-4 {
+  padding: 4px;
+}
+
+.s-8 {
+  padding: 8px;
+}
+
+.s-16 {
+  padding: 16px;
+}
+
+.s-24 {
+  padding: 24px;
+}
+
+.s-32 {
+  padding: 32px;
+}
+
+.s-40 {
+  padding: 40px;
+}
+
+.s-56 {
+  padding: 56px;
+}
+
+.s-80 {
+  padding: 80px;
+}
+
+.s-120 {
+  padding: 120px;
+}
+
+/* Button Padding */
+
+.btn-padding {
+  padding: 8px 16px;
+}
+
+/* Radius Units */
+.radius-default {
+  border-radius: 4px;
+}
+
+.radius-compact {
+  border-radius: 2px;
+}
+
+.radius-round {
+  border-radius: 999px;
+}
+
+.radius-0 {
+  border-radius: 0px;
+}
+
+
+/* Text Styles */
+.large-title, .title-1, .title-2 {
+  font-family: 'SF Pro Display Semibold';
+}
+
+.large-title {
+  font-size: 35px;
+  line-height: 40px;
+}
+
+.title-1 {
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.title-2 {
+  font-size: 23px;
+  line-height: 28px;
+}
+
+.title-3 {
+  font-family: 'SF Pro Display Light';
+  font-weight: 300; 
+  font-size: 23px;
+  line-height: 28px;
+}
+
+.headline, .body-1, .body-2 {
+  font-family: 'SF Pro Text Regular';
+}
+
+.headline {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.body-1 {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.body-2 {
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.label-1, .label-2, .btn {
+  font-family: 'SF Pro Text Medium';
+  font-weight: 500; 
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.label-1 {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.label-2 {
+  font-size: 11px;
+  line-height: 14px;
+}

@@ -1,0 +1,12 @@
+.text-input {
+  box-sizing: border-box; 
+  outline-color: var(--primary-brand);
+  width: 220px;
+  height: 32px;
+  padding: 8px 16px;
+  border: 1px solid var(--light-gray);
+  color: var(--black); 
+  background-color: var(--white);
+  gap: 10px;
+  /* border-radius mapped to .radius-default class */
+}

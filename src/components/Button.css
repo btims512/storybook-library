@@ -1,0 +1,11 @@
+.btn {
+  /* padding mapped to .btn-padding class */
+  border: none;
+  cursor: pointer;
+  color: var(--white);
+  /* border-radius mapped to .radius-default class */
+}
+
+.btn--primary {
+  background-color: #096FFA; /* color not mapped to --primary-brand for SB purposes */
+}

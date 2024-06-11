@@ -1,0 +1,15 @@
+.styles-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.styles-table th, .styles-table td {
+  border: 1px solid var(--light-gray);
+  padding: 8px;
+  text-align: left;
+}
+
+.styles-table th {
+  background-color: var(--snow);
+}
