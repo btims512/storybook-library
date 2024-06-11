@@ -8,7 +8,7 @@ import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
 
 Hello! I’m excited to present my Storybook Component Library, a project born from my passion to learn and master Storybook as a powerful tool for building and showcasing UI components. This library not only demonstrates my ability to utilize advanced frontend technologies but also serves as a portfolio to potential employers looking to understand my skills and capabilities in real-world applications.
 
-![Banner Image](public/banner.jpg)
+![Banner Image](public/sb-banner.jpg)
 
 ### Why This Project?
 
