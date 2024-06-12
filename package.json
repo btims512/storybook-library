@@ -1,7 +1,21 @@
 {
-  "name": "storybook-libraryv3",
+  "name": "react-storybook-library-v3",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/btims512/storybook-library.git"
+  },
+  "author": "Ben Tims",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/btims512/storybook-library/issues"
+  },
+  "homepage": "https://github.com/btims512/storybook-library#readme",
   "dependencies": {
     "@mdx-js/loader": "^3.0.1",
     "@mdx-js/mdx": "^3.0.1",

@@ -33,7 +33,7 @@ This project was built using a robust set of technologies chosen for their popul
 To explore my component library, start by installing the package:
 
 ```bash
-npm install my-storybook-library_v2
+npm install react-storybook-library-v3
 ```
 
 ## Running Storybook Locally
@@ -43,6 +43,10 @@ Visualize and interact with the components by running Storybook on your local ma
 ```bash
 npm run storybook
 ```
+
+## NPM Package
+
+You can find the NPM package [here](https://www.npmjs.com/package/react-storybook-library-v3).
 
 ## Contributing and Feedback
 
