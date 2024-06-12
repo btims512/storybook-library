@@ -13,7 +13,7 @@ const Button = ({
 }) => {
   const classNames = `btn ${variant} ${className} ${styleName}`;
   return (
-    <button className={classNames} onClick={onClick} style={style}>
+    <button className={`${classNames} label-1`} onClick={onClick} style={style}>
       {label}
     </button>
   );
@@ -51,7 +51,7 @@ export const OutlinedButton = ({
   };
 
   return (
-    <button className={classNames} onClick={onClick} style={buttonStyle}>
+    <button className={`${classNames} label-1`} onClick={onClick} style={buttonStyle}>
       {label}
     </button>
   );

@@ -5,7 +5,7 @@ import Text from "../components/Text";
 import Button from "../components/Button";
 
 export default {
-  title: "Components/Layouts",
+  title: "Guidelines/Layouts",
   component: GridLayout,
   argTypes: {
     columns: { control: { type: "number", min: 1, max: 12 } },
