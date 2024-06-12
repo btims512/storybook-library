@@ -2,12 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  gap: 20px;
 }
 
 .color-swatch {
   display: flex;
   align-items: center;
-  margin: 10px;
 }
 
 .color-box {

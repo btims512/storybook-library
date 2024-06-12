@@ -5,6 +5,7 @@ import "./TextInput.css";
 const TextInput = ({
   value,
   onChange,
+  placeholder,
   className,
   styleName = "body-1, radius-default",
 }) => {
@@ -13,6 +14,7 @@ const TextInput = ({
       type="text"
       value={value}
       onChange={onChange}
+      placeholder={placeholder}
       className={`text-input ${styleName} ${className}`}
     />
   );
@@ -21,8 +23,13 @@ const TextInput = ({
 TextInput.propTypes = {
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
+  placeholder: PropTypes.string,
   className: PropTypes.string,
   styleName: PropTypes.string,
+};
+
+TextInput.defaultProps = {
+  placeholder: "",
 };
 
 export default TextInput;

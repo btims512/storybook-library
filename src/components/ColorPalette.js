@@ -17,8 +17,8 @@ const ColorPalette = () => {
         <div key={color.name} className="color-swatch">
           <div className={`color-box ${color.className}`}></div>
           <div className="color-info">
-            <p className="color-name">{color.name}</p>
-            <p className="color-hex">{color.hex}</p>
+            <p className="color-name headline">{color.name}</p>
+            <p className="color-hex body-1">{color.hex}</p>
           </div>
         </div>
       ))}

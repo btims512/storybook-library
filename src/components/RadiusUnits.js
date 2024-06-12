@@ -29,7 +29,7 @@ const RadiusUnitsTable = () => {
           <th>Value</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody className="body-1">
         {radiusUnits.map((unit, index) => (
           <tr key={index}>
             <td>{unit.name}</td>

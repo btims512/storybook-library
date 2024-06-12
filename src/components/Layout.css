@@ -30,12 +30,14 @@
 }
 
 .input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   width: 100%; 
   padding-top: 10px;
 }
 
 .input-container .text-input {
-  margin-bottom: 10px; 
   width: 100%; 
 }
 
@@ -45,6 +47,14 @@
 
 .btn-input-row {
   text-align: end;
+}
+
+.margin-layout {
+  margin: 40px 80px;
+}
+
+.large-title {
+  margin-bottom: 10px;
 }
 
 /* Media queries */
@@ -69,5 +79,11 @@
   .input-container {
     width: 100%;
     padding-top: 0;
+  }
+
+  .grid-layout {
+    grid-template-columns: 1fr !important; 
+    margin: 24px 16px;
+    gap: 24px;
   }
 }

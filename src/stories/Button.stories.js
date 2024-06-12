@@ -24,6 +24,9 @@ export default {
         type: "color",
       },
     },
+    className: { table: { disable: true } },
+    styleName: { table: { disable: true } },
+    style: { table: { disable: true } },
   },
 };
 
@@ -43,6 +46,10 @@ export const Primary = Template.bind({});
 Primary.args = {
   label: "Button",
   variant: "btn--primary",
+};
+
+Primary.argTypes = {
+  outlineColor: { table: { disable: true } },
 };
 
 export const Outlined = OutlinedTemplate.bind({});

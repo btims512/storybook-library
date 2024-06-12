@@ -1,0 +1,9 @@
+.grid-layout {
+  display: grid;
+  gap: 10px;
+}
+
+.grid-layout > * {
+  background: #f0f0f0;
+  padding: 10px;
+}

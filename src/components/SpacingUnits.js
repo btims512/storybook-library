@@ -53,7 +53,7 @@ const SpacingUnitsTable = () => {
           <th>Value</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody className="body-1">
         {spacingUnits.map((unit, index) => (
           <tr key={index}>
             <td>{unit.name}</td>

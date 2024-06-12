@@ -10,3 +10,10 @@
   gap: 10px;
   /* border-radius mapped to .radius-default class */
 }
+
+.text-inputs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
