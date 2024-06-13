@@ -14,7 +14,7 @@ Text.propTypes = {
 };
 
 Text.defaultProps = {
-  className: "",
+  className: "text-component",
   as: "p",
 };
 

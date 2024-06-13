@@ -6,6 +6,28 @@
   --light-gray: #D6D6D6;
   --snow: #FAFAFA;
   --white: #FFFFFF;
+
+/* Spacing Units */
+  --s-0: 0px;
+  --s-4: 4px;
+  --s-8: 8px;
+  --s-16: 16px;
+  --s-24: 24px;
+  --s-32: 32px;
+  --s-40: 40px;
+  --s-56: 56px;
+  --s-80: 80px;
+  --s-120: 120px;
+
+/* Radius Units */
+  --radius-default: 4px;
+  --radius-compact: 2px;
+  --radius-round: 999px;
+  --radius-0: 0px;  
+
+/* Button Padding */
+  --btn-padding-y: 8px;
+  --btn-padding-x: 16px;
 }
 
 .primary-brand {
@@ -68,51 +90,9 @@
   margin: 0;
 }
 
-/* Spacing Units */
-.s-0 {
-  padding: 0px;
-}
-
-.s-4 {
-  padding: 4px;
-}
-
-.s-8 {
-  padding: 8px;
-}
-
-.s-16 {
-  padding: 16px;
-}
-
-.s-24 {
-  padding: 24px;
-}
-
-.s-32 {
-  padding: 32px;
-}
-
-.s-40 {
-  padding: 40px;
-}
-
-.s-56 {
-  padding: 56px;
-}
-
-.s-80 {
-  padding: 80px;
-}
-
-.s-120 {
-  padding: 120px;
-}
-
 /* Button Padding */
-
 .btn-padding {
-  padding: 8px 16px;
+  padding: var(--btn-padding-y) var(--btn-padding-x);
 }
 
 /* Radius Units */

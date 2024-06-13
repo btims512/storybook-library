@@ -1,0 +1,29 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 400px;
+  height: 200px;
+  border: 1px solid var(--light-gray);
+  border-radius: var(--radius-default);
+  background-color: var(--white);
+  padding: var(--s-16);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-bottom: var(--s-8);
+}
+
+.card p {
+  margin: 0;
+}
+
+.card > .body-1 {
+  padding-left: 2px;
+}
