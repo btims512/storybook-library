@@ -36,7 +36,7 @@ const Template = (args) => {
   return <Button {...rest} style={mergedStyle} />;
 };
 
-const OutlinedTemplate = (args) => {
+const SecondaryTemplate = (args) => {
   const { outlineColor, ...rest } = args;
   const mergedStyle = { outlineColor, ...rest.style };
   return <OutlinedButton {...rest} style={mergedStyle} />;
@@ -52,8 +52,8 @@ Primary.argTypes = {
   outlineColor: { table: { disable: true } },
 };
 
-export const Outlined = OutlinedTemplate.bind({});
-Outlined.args = {
+export const Secondary = SecondaryTemplate.bind({});
+Secondary.args = {
   label: "Button",
   variant: "btn--outlined",
 };

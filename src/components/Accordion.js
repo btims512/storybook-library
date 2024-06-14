@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { FaChevronDown } from "react-icons/fa";
 import "./Accordion.css";
 
 const Accordion = ({ title, children }) => {
@@ -12,15 +12,19 @@ const Accordion = ({ title, children }) => {
 
   return (
     <div className="accordion-container">
-        <div className="accordion">
-      <div className="accordion-header" onClick={toggleAccordion}>
-        <h3 className="headline">{title}</h3>
-        <button className="accordion-toggle">
-          {isOpen ? <FaChevronUp /> : <FaChevronDown />}
-        </button>
+      <div className="accordion">
+        <div className="accordion-header" onClick={toggleAccordion}>
+          <h3 className="headline">{title}</h3>
+          <button className={`accordion-toggle ${isOpen ? "open" : ""}`}>
+            {isOpen ? (
+              <FaChevronDown className="chevron-icon" />
+            ) : (
+              <FaChevronDown className="chevron-icon" />
+            )}
+          </button>
+        </div>
+        {isOpen && <div className="accordion-content">{children}</div>}
       </div>
-      {isOpen && <div className="accordion-content">{children}</div>}
-    </div>
     </div>
   );
 };

@@ -1,0 +1,80 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: max-content; 
+  padding: var(--s-16);
+}
+
+.dropdown-container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px; 
+  flex-wrap: wrap;
+}
+
+.dropdown-toggle {
+  width: 100%;
+  display: flex;
+  padding: var(--s-8);
+  border: none;
+  border-radius: var(--radius-default);
+  background-color: var(--white);
+  font-family: 'SF Pro Text Regular';
+  font-size: 14px;
+  color: var(--black);
+  cursor: pointer;
+  text-align: left;
+  justify-content: space-between;
+  transition: background-color 0.3s ease;
+  display: inline-flex; 
+}
+
+.dropdown-toggle:focus {
+  outline: 2px solid var(--primary-color); /* Add a focus outline */
+}
+
+.dropdown-menu {
+  position: absolute;
+  max-width: fit-content;
+  width: -webkit-fill-available;
+  list-style: none;
+  margin-top: 4px;
+  border: 1px solid var(--light-gray);
+  border-radius: var(--radius-default);
+  background-color: var(--white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding-left: 0px;
+  text-align: center;
+  z-index: 1;
+}
+
+.dropdown-option {
+  padding: var(--s-16);
+  cursor: pointer;
+  font-family: 'SF Pro Text Regular';
+  font-size: 14px;
+  color: var(--black);
+  border-bottom: 1px solid #ccc;
+}
+
+.dropdown-option:hover, .dropdown-option:focus {
+  background-color: var(--snow);
+}
+
+.chevron-icon {
+  transition: transform 0.3s ease;
+  margin-left: 10px;
+}
+
+.dropdown-toggle.open .chevron-icon {
+  transform: rotate(180deg);
+}
+
+.dropdown-option:last-child {
+  border-bottom: none; 
+}
+
+.options-container {
+  display: flex;
+  justify-content: center;
+}

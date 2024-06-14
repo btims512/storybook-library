@@ -13,7 +13,7 @@
 .btn--outlined {
   color: #096FFA; /* color not mapped to --primary-brand for SB purposes */
   background-color: transparent;
-  border: 1px solid var(--primary-brand); 
+  border: solid var(--primary-brand); 
 }
 
 .btn--disabled {

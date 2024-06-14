@@ -17,18 +17,33 @@
   cursor: pointer;
 }
 
+.headline {
+  color: var(--black);
+}
+
+.body-1 {
+  color: var(--black);
+}
+
 .accordion-toggle {
   background: none;
   border: none;
-  font-size: px;
   line-height: 1;
-  color: var(--primary-brand);
+  color: var(--black);
   cursor: pointer;
 }
 
 .accordion-content {
   padding: var(--s-16);
   background-color: var(--white);
+}
+
+.chevron-icon {
+  transition: transform 0.3s ease;
+}
+
+.accordion-toggle.open .chevron-icon {
+  transform: rotate(180deg);
 }
 
 @media (max-width: 768px) {

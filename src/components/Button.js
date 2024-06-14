@@ -51,7 +51,11 @@ export const OutlinedButton = ({
   };
 
   return (
-    <button className={`${classNames} label-1`} onClick={onClick} style={buttonStyle}>
+    <button
+      className={`${classNames} label-1`}
+      onClick={onClick}
+      style={buttonStyle}
+    >
       {label}
     </button>
   );
