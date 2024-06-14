@@ -1,4 +1,3 @@
-// src/stories/Tooltip.stories.jsx
 import React from "react";
 import Tooltip from "../components/Tooltip";
 

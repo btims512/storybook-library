@@ -1,4 +1,3 @@
-// src/components/Tooltip/Tooltip.jsx
 import React from "react";
 import PropTypes from "prop-types";
 import { FaQuestionCircle } from "react-icons/fa";
