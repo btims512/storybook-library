@@ -1,5 +1,5 @@
 import React from "react";
-import Button, { OutlinedButton, DisabledButton } from "../components/Button";
+import Button, { OutlinedButton } from "../components/Button";
 
 export default {
   title: "Components/Button",
@@ -9,7 +9,7 @@ export default {
       control: {
         type: "select",
         options: {
-          primary: "btn--primary",
+          primary: "btn--filled",
           secondary: "btn--secondary",
         },
       },
@@ -42,24 +42,24 @@ const SecondaryTemplate = (args) => {
   return <OutlinedButton {...rest} style={mergedStyle} />;
 };
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const Filled = Template.bind({});
+Filled.args = {
   label: "Button",
-  variant: "btn--primary",
+  variant: "btn--filled",
 };
 
-Primary.argTypes = {
+Filled.argTypes = {
   outlineColor: { table: { disable: true } },
 };
 
-export const Secondary = SecondaryTemplate.bind({});
-Secondary.args = {
+export const Outline = SecondaryTemplate.bind({});
+Outline.args = {
   label: "Button",
   variant: "btn--outlined",
 };
 
-export const Disabled = Template.bind({});
-Disabled.args = {
+export const Ghost = Template.bind({});
+Ghost.args = {
   label: "Button",
-  variant: "btn--disabled",
+  variant: "btn--ghost",
 };

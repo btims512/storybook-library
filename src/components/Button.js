@@ -8,7 +8,7 @@ const Button = ({
   onClick,
   variant,
   className,
-  styleName = "radius-default",
+  styleName = "radius-round",
   style,
 }) => {
   const classNames = `btn ${variant} ${className} ${styleName}`;
@@ -29,7 +29,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  variant: "btn--primary",
+  variant: "btn--filled",
   className: "btn-padding",
   styleName: "radius-default",
 };
@@ -87,7 +87,7 @@ export const DisabledButton = ({
   <Button
     label={label}
     onClick={onClick}
-    variant="btn--disabled"
+    variant="btn--ghost"
     className={className}
     styleName={styleName}
     style={style}

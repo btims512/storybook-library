@@ -2,22 +2,56 @@
   /* padding mapped to .btn-padding class */
   border: none;
   cursor: pointer;
-  color: var(--white);
   /* border-radius mapped to .radius-default class */
 }
 
-.btn--primary {
-  background-color: #096FFA; /* color not mapped to --primary-brand for SB purposes */
+.btn--filled {  
+  display: inline-flex;
+  padding: var(--Spacing-s12) var(--Spacing-s24);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #13ADC7; /* color not mapped to --primary-brand for SB purposes */
+  border-radius: var(--radius-round);
+  color: var(--background-1);
+}
+
+.btn--filled:hover {  
+  background: var(--foreground-1);
 }
 
 .btn--outlined {
-  color: #096FFA; /* color not mapped to --primary-brand for SB purposes */
-  background-color: transparent;
-  border: solid var(--primary-brand); 
+  display: inline-flex;
+  padding: var(--Spacing-s12) var(--Spacing-s24);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: var(--radius-round);
+  border: 1px solid var(--primary-brand);
+  background-color: #FFF; /* color not mapped to var for SB purposes */
+  color: var(--primary-brand); 
+  cursor: pointer;
 }
 
-.btn--disabled {
-  background-color: var(--light-gray);
-  color: var(--gray); 
-  cursor: not-allowed;
+.btn--outlined:hover {
+  border: 1px solid var(--foreground-1);
+  background: var(--background-2);
+  color: var(--foreground-1);
+}
+
+.btn--ghost {
+  display: inline-flex;
+  padding: var(--Spacing-s12) var(--Spacing-s24);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: var(--radius-round);
+  background-color: #FFF; /* color not mapped to var for SB purposes */
+  color: var(--primary-brand);
+  cursor: pointer;
+}
+
+.btn--ghost:hover {
+  background: var(--background-2);
+  color: var(--foreground-1);
 }

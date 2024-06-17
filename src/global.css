@@ -1,16 +1,19 @@
 /* Color Variables */
 :root {
-  --primary-brand: #096FFA;
-  --black: #111111;
-  --gray: #999999;
-  --light-gray: #D6D6D6;
-  --snow: #FAFAFA;
-  --white: #FFFFFF;
+  --primary-brand: #13ADC7;
+  --accent: #F43737;
+  --foreground-1: #111111;
+  --foreground-2: #999999;
+  --border-1: #D6D6D6;
+  --background-1: #FFFFFF;
+  --background-2: #FAFAFA;
+  --gradient: #13ADC7 - #B133FF;
 
 /* Spacing Units */
   --s-0: 0px;
   --s-4: 4px;
   --s-8: 8px;
+  --s-12: 12px;
   --s-16: 16px;
   --s-24: 24px;
   --s-32: 32px;
@@ -20,69 +23,49 @@
   --s-120: 120px;
 
 /* Radius Units */
-  --radius-default: 4px;
-  --radius-compact: 2px;
+  --radius-default: 6px;
+  --radius-compact: 3px;
+  --radius-card: 20px;
   --radius-round: 999px;
-  --radius-0: 0px;  
+  --radius-none: 0px;  
 
 /* Button Padding */
-  --btn-padding-y: 8px;
-  --btn-padding-x: 16px;
+  --Spacing-s12: 12px;
+  --Spacing-s24: 24px;
 }
 
-.primary-brand {
-  color: var(--primary-brand);
-}
-
-.black {
-  color: var(--black);
-}
-
-.gray {
-  color: var(--gray);
-}
-
-.light-gray {
-  color: var(--light-gray);
-}
-
-.snow {
-  color: var(--snow);
-}
-
-.white {
-  color: var(--white);
+/* Dark Mode  */
+body.dark-mode {
+  --primary-brand: #B133FF;
+  --accent: #F46737;
+  --foreground-1: #FFFFFF;
+  --foreground-2: #869DA9;
+  --border-1: #384767;
+  --background-1: #0E131F;
+  --background-2: #162032;
+  --gradient: #13ADC7 - #B133FF;
 }
 
 /* Semibold */
 @font-face {
-  font-family: 'SF Pro Display Semibold';
-  src: url('../public/fonts/SF-Pro-Display-Semibold.otf') format('truetype');
+  font-family: 'Titillium Web Semibold';
+  src: url('../public/fonts/TitilliumWeb-SemiBold.ttf') format('truetype');
   font-weight: 600;  
-  font-style: normal;
-}
-
-/* Light */
-@font-face {
-  font-family: 'SF Pro Display Light';
-  src: url('../public/fonts/SF-Pro-Display-Light.otf') format('truetype');
-  font-weight: 300; 
   font-style: normal;
 }
 
 /* Regular */
 @font-face {
-  font-family: 'SF Pro Text Regular';
-  src: url('../public/fonts/SF-Pro-Text-Regular.otf') format('truetype'); 
+  font-family: 'Titillium Web Regular';
+  src: url('../public/fonts/TitilliumWeb-Regular.ttf') format('truetype'); 
   font-weight: 400; 
   font-style: normal;
 }
-
-/* Medium */
+/* Light */
 @font-face {
-  font-family: 'SF Pro Text Medium';
-  src: url('../public/fonts/SF-Pro-Text-Medium.otf') format('truetype');
-  font-weight: 500;  
+  font-family: 'Titillium Web Light';
+  src: url('../public/fonts/TitilliumWeb-Light.ttf') format('truetype'); 
+  font-weight: 300; 
   font-style: normal;
 }
 
@@ -97,28 +80,40 @@
 
 /* Radius Units */
 .radius-default {
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 .radius-compact {
-  border-radius: 2px;
+  border-radius: 3px;
+}
+
+.radius-card {
+  border-radius: 20px;
 }
 
 .radius-round {
   border-radius: 999px;
 }
 
-.radius-0 {
+.radius-none {
   border-radius: 0px;
 }
 
 /* Text Styles */
-.large-title, .title-1, .title-2 {
-  font-family: 'SF Pro Display Semibold';
+.large-title, .title-1, .title-2, .label-1, .label-2 {
+  font-family: 'Titillium Web Semibold';
+}
+
+.headline, .body-1, .body-2 {
+  font-family: 'Titillium Web Regular';
+}
+
+.title-3 {
+  font-family: 'Titillium Web Light';
 }
 
 .large-title {
-  font-size: 35px;
+  font-size: 32px;
   line-height: 40px;
 }
 
@@ -127,50 +122,37 @@
   line-height: 40px;
 }
 
-.title-2 {
-  font-size: 23px;
-  line-height: 28px;
-}
-
-.title-3 {
-  font-family: 'SF Pro Display Light';
-  font-weight: 300; 
-  font-size: 23px;
-  line-height: 28px;
-}
-
-.headline, .body-1, .body-2 {
-  font-family: 'SF Pro Text Regular';
-}
-
 .headline {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 20px;
 }
 
 .body-1 {
-  font-size: 13px;
-  line-height: 16px;
-}
-
-.body-2 {
-  font-size: 11px;
-  line-height: 14px;
-}
-
-.label-1, .label-2 {
-  font-family: 'SF Pro Text Medium';
-  font-weight: 500; 
-  font-size: 13px;
+  font-size: 14px;
   line-height: 16px;
 }
 
 .label-1 {
-  font-size: 13px;
+  font-size: 14px;
   line-height: 16px;
 }
 
+.title-2 {
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.title-3 {
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.body-2 {
+  font-size: 10px;
+  line-height: 14px;
+}
+
 .label-2 {
-  font-size: 11px;
+  font-size: 10px;
   line-height: 14px;
 }
