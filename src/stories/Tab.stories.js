@@ -2,13 +2,12 @@ import React from "react";
 import Tab from "../components/Tab";
 
 export default {
-  title: "Components/Tabs/Text",
+  title: "Components/Tabs",
   component: Tab,
   argTypes: {
     onClick: { action: "clicked" },
   },
   parameters: {
-    // Set story order
     storySort: {
       order: 100,
     },

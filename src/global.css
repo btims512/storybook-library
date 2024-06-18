@@ -10,7 +10,7 @@
   --background-2: #FAFAFA;
   --gradient: linear-gradient(to right, #13ADC7, #B133FF);
 
-/* Spacing Units */
+  /* Spacing Units */
   --s-0: 0px;
   --s-4: 4px;
   --s-8: 8px;
@@ -23,23 +23,23 @@
   --s-80: 80px;
   --s-120: 120px;
 
-/* Radius Units */
+  /* Radius Units */
   --radius-default: 6px;
   --radius-compact: 3px;
   --radius-card: 20px;
   --radius-round: 999px;
-  --radius-none: 0px;  
+  --radius-none: 0px;
 
-/* Button Padding */
+  /* Button Padding */
   --s-12: 12px;
   --s-24: 24px;
 
-/* Font Variables */
+  /* Font Variables */
   --font-family-semibold: 'Titillium Web Semibold';
   --font-family-regular: 'Titillium Web Regular';
   --font-family-light: 'Titillium Web Light';
 
-    /* Text Styles */
+  /* Text Styles */
   --text-large-title: 32px / 40px var(--font-family-semibold);
   --text-title-1: 28px / 40px var(--font-family-semibold);
   --text-headline: 16px / 20px var(--font-family-regular);
@@ -51,7 +51,19 @@
   --text-label-2: 10px / 14px var(--font-family-regular);
 }
 
-/* Dark Mode  */
+/* Light Mode */
+body.light-mode {
+  --primary-brand: #13ADC7;
+  --accent: #F43737;
+  --foreground-1: #111111;
+  --foreground-2: #999999;
+  --border-1: #D6D6D6;
+  --background-1: #FFFFFF;
+  --background-2: #FAFAFA;
+  --gradient: linear-gradient(to right, #13ADC7, #B133FF);
+}
+
+/* Dark Mode */
 body.dark-mode {
   --primary-brand: #B133FF;
   --accent: #F46737;
@@ -60,29 +72,30 @@ body.dark-mode {
   --border-1: #384767;
   --background-1: #0E131F;
   --background-2: #162032;
-  --gradient: #13ADC7 - #B133FF;
+  --gradient: linear-gradient(to right, #13ADC7, #B133FF);
 }
 
 /* Semibold */
 @font-face {
   font-family: var(--font-family-semibold);
   src: url('../public/fonts/TitilliumWeb-SemiBold.ttf') format('truetype');
-  font-weight: 600;  
+  font-weight: 600;
   font-style: normal;
 }
 
 /* Regular */
 @font-face {
   font-family: var(--font-family-regular);
-  src: url('../public/fonts/TitilliumWeb-Regular.ttf') format('truetype'); 
-  font-weight: 400; 
+  src: url('../public/fonts/TitilliumWeb-Regular.ttf') format('truetype');
+  font-weight: 400;
   font-style: normal;
 }
+
 /* Light */
 @font-face {
   font-family: var(--font-family-light);
-  src: url('../public/fonts/TitilliumWeb-Light.ttf') format('truetype'); 
-  font-weight: 300; 
+  src: url('../public/fonts/TitilliumWeb-Light.ttf') format('truetype');
+  font-weight: 300;
   font-style: normal;
 }
 

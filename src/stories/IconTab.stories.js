@@ -3,7 +3,7 @@ import IconTab from "../components/IconTab";
 import { ReactComponent as GitHubIcon } from "./assets/icon-github.svg";
 
 export default {
-  title: "Components/Tabs/IconTab",
+  title: "Design Tokens/IconTab",
   component: IconTab,
   argTypes: {
     onClick: { action: "clicked" },

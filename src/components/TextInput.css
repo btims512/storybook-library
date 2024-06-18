@@ -4,9 +4,9 @@
   width: 220px;
   height: 32px;
   padding: 8px 16px;
-  border: 1px solid var(--light-gray);
+  border: 1px solid var(--border-1);
   color: var(--black); 
-  background-color: var(--white);
+  background-color: var(--background-2);
   gap: 10px;
   /* border-radius mapped to .radius-default class */
 }
