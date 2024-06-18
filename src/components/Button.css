@@ -1,13 +1,11 @@
 .btn {
-  /* padding mapped to .btn-padding class */
   border: none;
   cursor: pointer;
-  /* border-radius mapped to .radius-default class */
 }
 
 .btn--filled {  
   display: inline-flex;
-  padding: var(--Spacing-s12) var(--Spacing-s24);
+  padding: var(--s-12) var(--s-24);
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -22,7 +20,7 @@
 
 .btn--outlined {
   display: inline-flex;
-  padding: var(--Spacing-s12) var(--Spacing-s24);
+  padding: var(--s-12) var(--s-24);
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -30,7 +28,6 @@
   border: 1px solid var(--primary-brand);
   background-color: #FFF; /* color not mapped to var for SB purposes */
   color: var(--primary-brand); 
-  cursor: pointer;
 }
 
 .btn--outlined:hover {
@@ -41,14 +38,13 @@
 
 .btn--ghost {
   display: inline-flex;
-  padding: var(--Spacing-s12) var(--Spacing-s24);
+  padding: var(--s-12) var(--s-24);
   justify-content: center;
   align-items: center;
   gap: 10px;
   border-radius: var(--radius-round);
   background-color: #FFF; /* color not mapped to var for SB purposes */
   color: var(--primary-brand);
-  cursor: pointer;
 }
 
 .btn--ghost:hover {

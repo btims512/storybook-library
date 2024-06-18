@@ -1,5 +1,6 @@
-/* Color Variables */
+/* Global Variables */
 :root {
+  /* Color Variables */
   --primary-brand: #13ADC7;
   --accent: #F43737;
   --foreground-1: #111111;
@@ -7,7 +8,7 @@
   --border-1: #D6D6D6;
   --background-1: #FFFFFF;
   --background-2: #FAFAFA;
-  --gradient: #13ADC7 - #B133FF;
+  --gradient: linear-gradient(to right, #13ADC7, #B133FF);
 
 /* Spacing Units */
   --s-0: 0px;
@@ -30,8 +31,24 @@
   --radius-none: 0px;  
 
 /* Button Padding */
-  --Spacing-s12: 12px;
-  --Spacing-s24: 24px;
+  --s-12: 12px;
+  --s-24: 24px;
+
+/* Font Variables */
+  --font-family-semibold: 'Titillium Web Semibold';
+  --font-family-regular: 'Titillium Web Regular';
+  --font-family-light: 'Titillium Web Light';
+
+    /* Text Styles */
+  --text-large-title: 32px / 40px var(--font-family-semibold);
+  --text-title-1: 28px / 40px var(--font-family-semibold);
+  --text-headline: 16px / 20px var(--font-family-regular);
+  --text-body-1: 14px / 16px var(--font-family-regular);
+  --text-label-1: 14px / 16px var(--font-family-regular);
+  --text-title-2: 22px / 28px var(--font-family-semibold);
+  --text-title-3: 22px / 28px var(--font-family-light);
+  --text-body-2: 10px / 14px var(--font-family-regular);
+  --text-label-2: 10px / 14px var(--font-family-regular);
 }
 
 /* Dark Mode  */
@@ -48,7 +65,7 @@ body.dark-mode {
 
 /* Semibold */
 @font-face {
-  font-family: 'Titillium Web Semibold';
+  font-family: var(--font-family-semibold);
   src: url('../public/fonts/TitilliumWeb-SemiBold.ttf') format('truetype');
   font-weight: 600;  
   font-style: normal;
@@ -56,103 +73,90 @@ body.dark-mode {
 
 /* Regular */
 @font-face {
-  font-family: 'Titillium Web Regular';
+  font-family: var(--font-family-regular);
   src: url('../public/fonts/TitilliumWeb-Regular.ttf') format('truetype'); 
   font-weight: 400; 
   font-style: normal;
 }
 /* Light */
 @font-face {
-  font-family: 'Titillium Web Light';
+  font-family: var(--font-family-light);
   src: url('../public/fonts/TitilliumWeb-Light.ttf') format('truetype'); 
   font-weight: 300; 
   font-style: normal;
 }
 
+/* Other Styles */
 .text-default {
   margin: 0;
 }
 
-/* Button Padding */
-.btn-padding {
-  padding: var(--btn-padding-y) var(--btn-padding-x);
-}
-
-/* Radius Units */
+/* Radius Styles */
 .radius-default {
-  border-radius: 6px;
+  border-radius: var(--radius-default);
 }
 
 .radius-compact {
-  border-radius: 3px;
+  border-radius: var(--radius-compact);
 }
 
 .radius-card {
-  border-radius: 20px;
+  border-radius: var(--radius-card);
 }
 
 .radius-round {
-  border-radius: 999px;
+  border-radius: var(--radius-round);
 }
 
 .radius-none {
-  border-radius: 0px;
+  border-radius: var(--radius-none);
 }
 
 /* Text Styles */
 .large-title, .title-1, .title-2, .label-1, .label-2 {
-  font-family: 'Titillium Web Semibold';
+  font-family: var(--font-family-semibold);
 }
 
 .headline, .body-1, .body-2 {
-  font-family: 'Titillium Web Regular';
+  font-family: var(--font-family-regular);
 }
 
 .title-3 {
-  font-family: 'Titillium Web Light';
+  font-family: var(--font-family-light);
 }
 
 .large-title {
-  font-size: 32px;
-  line-height: 40px;
+  font: var(--text-large-title);
 }
 
 .title-1 {
-  font-size: 28px;
-  line-height: 40px;
+  font: var(--text-title-1);
 }
 
 .headline {
-  font-size: 16px;
-  line-height: 20px;
+  font: var(--text-headline);
 }
 
 .body-1 {
-  font-size: 14px;
-  line-height: 16px;
+  font: var(--text-body-1);
 }
 
 .label-1 {
-  font-size: 14px;
-  line-height: 16px;
+  font: var(--text-label-1);
 }
 
 .title-2 {
-  font-size: 22px;
-  line-height: 28px;
+  font: var(--text-title-2);
 }
 
 .title-3 {
-  font-size: 22px;
-  line-height: 28px;
+  font: var(--text-title-3);
 }
 
 .body-2 {
-  font-size: 10px;
-  line-height: 14px;
+  font: var(--text-body-2);
 }
 
 .label-2 {
-  font-size: 10px;
-  line-height: 14px;
+  font: var(--text-label-2);
 }
