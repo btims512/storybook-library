@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./Layout.css";
+import Button, { OutlinedButton, DisabledButton } from "../components/Button";
 
 const FlexibleLayout = ({ rows, children }) => {
   const renderRows = () => {

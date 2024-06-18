@@ -66,7 +66,7 @@ const Template = (args) => {
             placeholder=""
           />
           <div className="btn-input-row" style={{ marginTop: "10px" }}>
-            <Button label="Button" variant="btn--primary" />
+            <Button label="Button" variant="btn--filled" />
           </div>
         </div>
       </div>

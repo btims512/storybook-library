@@ -32,6 +32,7 @@ Button.defaultProps = {
   variant: "btn--filled",
   className: "btn-padding",
   styleName: "radius-default",
+  style: {},
 };
 
 // OutlinedButton component
@@ -41,7 +42,7 @@ export const OutlinedButton = ({
   variant,
   className,
   styleName = "radius-default",
-  style,
+  style = {},
 }) => {
   const classNames = `btn ${variant} ${className} ${styleName}`;
   const { outlineColor, ...restStyle } = style;
@@ -74,6 +75,7 @@ OutlinedButton.defaultProps = {
   variant: "btn--primary",
   className: "btn-padding",
   styleName: "radius-default",
+  style: {},
 };
 
 // DisabledButton component
@@ -106,6 +108,7 @@ DisabledButton.propTypes = {
 DisabledButton.defaultProps = {
   className: "btn-padding",
   styleName: "radius-default",
+  style: {},
 };
 
 export default Button;
