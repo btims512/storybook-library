@@ -3,13 +3,12 @@ import IconTab from "../components/IconTab";
 import { ReactComponent as GitHubIcon } from "./assets/icon-github.svg";
 
 export default {
-  title: "Design Tokens/IconTab",
+  title: "Components/IconTab",
   component: IconTab,
   argTypes: {
     onClick: { action: "clicked" },
   },
   parameters: {
-    // Set story order
     storySort: {
       order: 100,
     },
