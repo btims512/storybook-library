@@ -1,8 +1,8 @@
+// src/components/Button.js
 import React from "react";
 import PropTypes from "prop-types";
 import "./Button.css";
 
-// PrimaryButton component
 const Button = ({
   label,
   onClick,
@@ -35,7 +35,8 @@ Button.defaultProps = {
   style: {},
 };
 
-// OutlinedButton component
+export default Button;
+
 export const OutlinedButton = ({
   label,
   onClick,
@@ -78,7 +79,6 @@ OutlinedButton.defaultProps = {
   style: {},
 };
 
-// DisabledButton component
 export const DisabledButton = ({
   label,
   onClick,
@@ -110,5 +110,3 @@ DisabledButton.defaultProps = {
   styleName: "radius-default",
   style: {},
 };
-
-export default Button;

@@ -1,28 +1,12 @@
-import React, { useState, useEffect } from "react";
-import "./ThemeSwitcher.css";
+// src/components/ThemeSwitcher.js
+import { useEffect } from "react";
 
-const ThemeSwitcher = () => {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
-
+const ThemeSwitcher = ({ theme }) => {
   useEffect(() => {
     document.body.className = theme;
-    localStorage.setItem("theme", theme);
   }, [theme]);
 
-  const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
-  };
-
-  return (
-    <label className="switch">
-      <input
-        type="checkbox"
-        checked={theme === "dark"}
-        onChange={toggleTheme}
-      />
-      <span className="slider"></span>
-    </label>
-  );
+  return null;
 };
 
 export default ThemeSwitcher;

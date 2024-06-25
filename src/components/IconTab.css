@@ -1,5 +1,5 @@
 .icon-tab {
-  border: none; 
+  border: none;
   border-radius: var(--radius-default);
   background-color: var(--background-1);
   padding: var(--s-4);
@@ -11,17 +11,15 @@
 
 .icon-tab--active {
   background-color: var(--foreground-1);
-  color: var(--background-1);
-  fill: var(--background-1); 
 }
 
-.icon {
-  display: inline-block;
+.icon-tab svg {
+  fill: black;
   width: 32px; 
-  height: 32px; 
-  fill: var(--foreground-2); 
 }
 
-.icon-tab--active .icon {
-  fill: var(--background-1); 
+.icon-tab--active svg {
+  fill: white; 
+  width: 32px; 
+  height: 32px;
 }

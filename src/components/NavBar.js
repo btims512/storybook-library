@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
+import PropTypes from "prop-types";
 import "./NavBar.css";
 
 const NavBar = ({ links }) => {
@@ -41,6 +42,15 @@ const NavBar = ({ links }) => {
       </div>
     </div>
   );
+};
+
+NavBar.propTypes = {
+  links: PropTypes.arrayOf(
+    PropTypes.shape({
+      href: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };
 
 export default NavBar;

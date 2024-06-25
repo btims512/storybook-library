@@ -1,0 +1,23 @@
+.page-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-56, 56px);
+  align-self: stretch;
+}
+
+.navbar, .footer {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-56, 56px);
+}
+
+.hero, .projects, .technologies, .about {
+  width: 100%;
+}
