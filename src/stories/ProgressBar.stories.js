@@ -28,5 +28,5 @@ const Template = (args) => {
 export const Default = Template.bind({});
 Default.args = {
   progress: 50,
-  color: "#096FFA",
+  color: "var(--primary-brand)",
 };

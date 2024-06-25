@@ -49,6 +49,9 @@
   --text-title-3: 22px / 28px var(--font-family-light);
   --text-body-2: 10px / 14px var(--font-family-regular);
   --text-label-2: 10px / 14px var(--font-family-regular);
+
+  /* Button font */
+  --button-font-size: 14px;
 }
 
 /* Light Mode */

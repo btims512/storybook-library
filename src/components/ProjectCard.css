@@ -54,7 +54,8 @@
 .project-card-buttons .btn {
   flex: 1; 
   border-radius: var(--radius-card);
-  height: 40px; /* Fixed height */
+  height: 40px; 
+  font-size: var(--button-font-size); 
 }
 
 .card-container {
@@ -69,14 +70,21 @@
   border: 1px solid var(--primary-brand); 
 }
 
+/* Dark Mode Button Font Color */
+body.dark .project-card-buttons .btn {
+  color: var(--background-1); 
+}
+
 /* Light Mode Hover */
 body.light .project-card-buttons .btn--reversed:hover {
   border-color: var(--primary-brand); 
+  color: var(--primary-brand); 
 }
 
 /* Dark Mode Hover */
 body.dark .project-card-buttons .btn--reversed:hover {
   border-color: var(--primary-brand); 
+  color: var(--primary-brand); 
 }
 
 /* Small Breakpoint */

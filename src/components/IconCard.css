@@ -13,8 +13,8 @@
   width: 64px;
   height: 64px;
   flex-shrink: 0;
-  fill: var(--accent); 
-  stroke: var(--accent); 
+  fill: var(--primary-brand-icon); 
+  stroke: var(--primary-brand-icon); 
 }
 
 

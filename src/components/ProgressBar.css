@@ -1,7 +1,7 @@
 .progress-bar {
   width: 100%;
   height: 24px;
-  background-color: #e0e0e0;
+  background-color: var(--border-1); 
   border-radius: var(--radius-default);
   overflow: hidden;
   display: flex;
@@ -12,7 +12,7 @@
   width: 100%;
   height: 100%;
   position: relative;
-  background-color: #e0e0e0;
+  background-color: var(--border-1); 
   border-radius: var(--radius-default);
 }
 
@@ -22,12 +22,11 @@
   align-items: center;
   justify-content: center;
   transition: width 0.5s ease-in-out; 
-  color: white;
+  color: var(--background-1); 
   border-radius: var(--radius-default);
 }
 
 .progress-bar__label {
-  font-family: 'SF Pro Text Regular';
-  font-size: 14px;
+  font: var(--text-label-1); 
   padding: 0 var(--s-8);
 }

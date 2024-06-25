@@ -5,9 +5,7 @@ import "./ProgressBar.css";
 const ProgressBar = ({ progress, label, color }) => {
   const getProgressColor = () => {
     if (color) return color;
-    if (progress < 30) return "#ff4d4f";
-    if (progress < 70) return "#faad14";
-    return "#52c41a";
+    return "var(--primary-brand)"; 
   };
 
   return (
@@ -35,7 +33,7 @@ ProgressBar.propTypes = {
 
 ProgressBar.defaultProps = {
   label: "",
-  color: "var(--primary-color)",
+  color: "var(--primary-brand)",
 };
 
 export default ProgressBar;
