@@ -1,11 +1,15 @@
 .hero {
   display: flex;
-  padding: var(--s-0) var(--s-80);
+  padding: var(--s-0) var(--s-16); /* Adjusted padding */
   justify-content: space-between;
   align-items: center;
-  gap: 16px var(--s-16);
+  gap: var(--s-16);
   align-self: stretch;
   flex-wrap: wrap;
+  max-width: 1280px;
+  margin: 0 auto; /* Center the hero section */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .hero-left {
@@ -54,7 +58,7 @@
     justify-content: center;
     align-items: center;
     padding: var(--s-0) var(--s-16);
-    gap: var(--s-0)
+    gap: var(--s-0);
   }
 
   .hero-left {

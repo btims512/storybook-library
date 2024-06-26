@@ -1,3 +1,4 @@
+// src/components/NavBar.js
 import React, { useState } from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
 import PropTypes from "prop-types";

@@ -1,26 +1,35 @@
 .project-card {
   display: flex;
-  width: 100%;
+  width: 50%;
   padding: var(--s-24);
   flex-direction: column;
   align-items: flex-start;
   gap: var(--s-24);
   border-radius: var(--radius-card);
-  background-color: var(--background-1);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+/* Light Mode */
+body.light .project-card {
+  background: linear-gradient(180deg, #FFF 0%, #F3F3F3 100%);
+}
+
+/* Dark Mode */
+body.dark .project-card {
+  background: linear-gradient(180deg, #0E131F 0%, #162032 100%);
 }
 
 .project-card-header {
   display: flex;
-  align-items: center; 
-  gap: var(--s-16); 
+  align-items: center;
+  gap: var(--s-16);
 }
 
 .project-card-icon {
   width: 45px;
   height: 45px;
-  flex-shrink: 0; 
+  flex-shrink: 0;
 }
 
 .project-card-title {
@@ -34,7 +43,7 @@
 .project-card-tech {
   color: var(--foreground-2);
   font-family: var(--font-family-regular);
-  font: var(--text-body-2); 
+  font: var(--text-body-2);
   line-height: 14px;
 }
 
@@ -48,14 +57,14 @@
 .project-card-buttons {
   display: flex;
   gap: var(--s-12);
-  width: 100%; 
+  width: 100%;
 }
 
 .project-card-buttons .btn {
-  flex: 1; 
+  flex: 1;
   border-radius: var(--radius-card);
-  height: 40px; 
-  font-size: var(--button-font-size); 
+  height: 40px;
+  font-size: var(--button-font-size);
 }
 
 .card-container {
@@ -67,43 +76,43 @@
 
 .project-card-buttons .btn--reversed:hover {
   background-color: var(--background-1);
-  border: 1px solid var(--primary-brand); 
+  border: 1px solid var(--primary-brand);
 }
 
 /* Dark Mode Button Font Color */
 body.dark .project-card-buttons .btn {
-  color: var(--background-1); 
+  color: var(--background-1);
 }
 
 /* Light Mode Hover */
 body.light .project-card-buttons .btn--reversed:hover {
-  border-color: var(--primary-brand); 
-  color: var(--primary-brand); 
+  border-color: var(--primary-brand);
+  color: var(--primary-brand);
 }
 
 /* Dark Mode Hover */
 body.dark .project-card-buttons .btn--reversed:hover {
-  border-color: var(--primary-brand); 
-  color: var(--primary-brand); 
+  border-color: var(--primary-brand);
+  color: var(--primary-brand);
 }
 
 /* Small Breakpoint */
 @media (max-width: 768px) {
   .project-card {
-    flex: 1 1 100%; 
+    flex: 1 1 100%;
   }
 }
 
 /* Medium Breakpoint */
 @media (min-width: 769px) and (max-width: 1023px) {
   .project-card {
-    flex: 1 1 calc(50% - 20px); 
+    flex: 1 1 calc(50% - 20px);
   }
 }
 
 /* Large Breakpoint */
 @media (min-width: 1024px) {
   .project-card {
-    flex: 1 1 calc(33.333% - 20px); 
+    flex: 1 1 calc(33.333% - 20px);
   }
 }

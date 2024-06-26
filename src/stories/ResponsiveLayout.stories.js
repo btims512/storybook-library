@@ -3,7 +3,7 @@ import ResponsiveLayout from "../components/ResponsiveLayout";
 import Text from "../components/Text";
 
 export default {
-  title: "Components/PageLayouts",
+  title: "Layouts/PageTemplate",
   component: ResponsiveLayout,
   argTypes: {
     header: { control: false },

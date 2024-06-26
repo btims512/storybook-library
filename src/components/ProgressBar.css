@@ -23,7 +23,7 @@
   justify-content: center;
   transition: width 0.5s ease-in-out; 
   color: var(--background-1); 
-  border-radius: var(--radius-default);
+  border-radius: var(--radius-round);
 }
 
 .progress-bar__label {

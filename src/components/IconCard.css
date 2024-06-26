@@ -6,7 +6,6 @@
   gap: var(--Spacing-s8, 8px);
   padding: var(--Spacing-s16, 16px);
   border-radius: var(--Radius-default, 8px);
-  background-color: var(--background-1, #FFFFFF);
 }
 
 .icon-card-icon {

@@ -1,6 +1,6 @@
+// .storybook/preview.js
 import "../src/global.css";
 import React from "react";
-import ThemeSwitcher from "../src/components/ThemeSwitcher";
 
 /** @type { import('@storybook/react').Preview } */
 const preview = {
@@ -36,12 +36,7 @@ const preview = {
       const themeClass = scheme === "dark" ? "dark" : "light";
       document.body.className = themeClass;
 
-      return (
-        <>
-          <ThemeSwitcher theme={themeClass} />
-          <Story />
-        </>
-      );
+      return <Story />;
     },
   ],
 };

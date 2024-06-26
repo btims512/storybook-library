@@ -13,7 +13,7 @@ const Template = (args) => <TechPageLayout {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  title: "Technology Stack",
+  title: "Technologies",
   iconCards: [
     {
       icon: <FrontEndIcon className="icon-card-icon" />,
