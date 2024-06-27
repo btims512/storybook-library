@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./Text.css";
 
 const Text = ({ children, className, as: Component = "p" }) => {
   return (
@@ -14,7 +15,7 @@ Text.propTypes = {
 };
 
 Text.defaultProps = {
-  className: "text-component",
+  className: "",
   as: "p",
 };
 

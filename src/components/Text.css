@@ -1,0 +1,19 @@
+.text-default {
+  margin: 0;
+  font-family: var(--font-family-regular);
+  color: var(--foreground-1); 
+}
+
+/* Light Mode Text Colors */
+body.light .text-default,
+body.light th,
+body.light td {
+  color: var(--foreground-1);
+}
+
+/* Dark Mode Text Colors */
+body.dark .text-default,
+body.dark th,
+body.dark td {
+  color: var(--foreground-1);
+}

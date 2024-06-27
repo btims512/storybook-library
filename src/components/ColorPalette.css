@@ -14,34 +14,90 @@
   width: 50px;
   height: 50px;
   border: 1px solid #000;
+  border-radius: var(--radius-default);
   margin-right: 10px;
 }
 
 .color-name {
-  font-weight: bold;
-  font-family: 'SF Pro Display';
+  font-family: var(--font-family-semibold);
 }
 
+.color-hex {
+  font-family: var(--font-family-regular);
+}
+
+/* Light Mode Colors */
 .primary-brand {
   background-color: var(--primary-brand);
 }
 
 .black {
-  background-color: var(--black);
+  background-color: var(--foreground-1);
 }
 
 .gray {
-  background-color: var(--gray);
+  background-color: var(--foreground-2);
 }
 
 .light-gray {
-  background-color: var(--light-gray);
+  background-color: var(--border-1);
 }
 
 .snow {
-  background-color: var(--snow);
+  background-color: var(--background-2);
 }
 
 .white {
-  background-color: var(--white);
+  background-color: var(--background-1);
+}
+
+/* Dark Mode Colors */
+.primary-brand-dark {
+  background-color: var(--primary-brand);
+}
+
+.accent-dark {
+  background-color: var(--accent);
+}
+
+.foreground-1-dark {
+  background-color: var(--foreground-1);
+}
+
+.foreground-2-dark {
+  background-color: var(--foreground-2);
+}
+
+.border-1-dark {
+  background-color: var(--border-1);
+}
+
+.background-1-dark {
+  background-color: var(--background-1);
+}
+
+.background-2-dark {
+  background-color: var(--background-2);
+}
+
+/* Palette Title Styles */
+.palette-title {
+  font-family: var(--font-family-semibold);
+  font-size: var(--text-title-1);
+  margin-top: var(--s-32);
+  color: var(--foreground-1);
+}
+
+/* Light Mode Text Colors */
+body.light .color-name,
+body.light .color-hex,
+body.light .palette-title {
+  color: var(--foreground-1);
+}
+
+/* Dark Mode Text Colors */
+body.dark .color-name,
+body.dark .color-hex,
+body.dark .palette-title {
+  color: var(--foreground-1);
 }

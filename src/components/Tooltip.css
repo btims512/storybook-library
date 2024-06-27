@@ -5,18 +5,18 @@
 
 .tooltip-icon {
   font-size: 24px;
-  color: #0366eb;
+  color: var(--primary-brand);
   cursor: pointer;
 }
 
 .tooltip-box {
   position: absolute;
-  background-color: #0366eb;
-  color: #fff;
+  background-color: var(--primary-brand);
+  color: var(--foreground-1);
   padding: var(--s-16);
   border-radius: var(--radius-default);
-  font-family: 'SF Pro Text Regular';
-  font-size: 14px;
+  font-family: var(--font-family-regular);
+  font-size: var(--text-body-1);
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s;
@@ -25,7 +25,8 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
   width: 200px; 
-  height: 100px; 
+  height: auto; 
+  box-sizing: border-box; 
 }
 
 .tooltip-container:hover .tooltip-box {
@@ -69,29 +70,43 @@
 }
 
 .tooltip-top::after {
-  border-color: #0366eb transparent transparent transparent; 
+  border-color: var(--primary-brand) transparent transparent transparent; 
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .tooltip-right::after {
-  border-color: transparent #0366eb transparent transparent; 
+  border-color: transparent var(--primary-brand) transparent transparent; 
   top: 50%;
   left: 0;
   transform: translateY(-50%);
 }
 
 .tooltip-bottom::after {
-  border-color: transparent transparent #0366eb transparent; 
+  border-color: transparent transparent var(--primary-brand) transparent; 
   bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .tooltip-left::after {
-  border-color: transparent transparent transparent #0366eb; 
+  border-color: transparent transparent transparent var(--primary-brand); 
   top: 50%;
   right: 0;
   transform: translateY(-50%);
+}
+
+.tooltip-box .tooltip-title {
+  font-family: var(--font-family-regular); 
+  font-size: var(--text-label-1);
+  color: var(--foreground-1); 
+  color: #ffffff; 
+  margin-bottom: var(--s-8);
+}
+
+.tooltip-box .tooltip-content {
+  font-family: var(--font-family-regular);
+  font-size: var(--text-body-1);
+  color: #ffffff; 
 }

@@ -7,7 +7,7 @@
   --foreground-2: #999999;
   --border-1: #D6D6D6;
   --background-1: #FFFFFF;
-  --background-2: #F3F3F3; /* Updated background color */
+  --background-2: #F3F3F3;
   --gradient: linear-gradient(to right, #13ADC7, #B133FF);
 
   /* Spacing Units */
@@ -62,9 +62,9 @@ body.light {
   --foreground-2: #999999;
   --border-1: #D6D6D6;
   --background-1: #FFFFFF;
-  --background-2: #F3F3F3; /* Updated background color */
+  --background-2: #F3F3F3;
   --gradient: linear-gradient(to right, #13ADC7, #B133FF);
-  background-color: var(--background-2); /* Ensure body background color is set */
+  background-color: var(--background-2);
 }
 
 /* Dark Mode */
@@ -74,10 +74,10 @@ body.dark {
   --foreground-1: #FFFFFF;
   --foreground-2: #869DA9;
   --border-1: #384767;
-  --background-1: rgb(15, 22, 36); /* Updated background color */
+  --background-1: rgb(15, 22, 36);
   --background-2: #162032;
   --gradient: linear-gradient(to right, #13ADC7, #B133FF);
-  background-color: var(--background-1); /* Ensure body background color is set */
+  background-color: var(--background-1);
 }
 
 /* Semibold */

@@ -1,15 +1,36 @@
 .styles-table {
   width: 100%;
   border-collapse: collapse;
-  margin: 20px 0;
 }
 
-.styles-table th, .styles-table td {
-  border: 1px solid var(--light-gray);
-  padding: 8px;
+.styles-table th,
+.styles-table td {
+  border: 1px solid var(--border-1);
+  padding: var(--s-8);
   text-align: left;
+  font-family: var(--font-family-regular);
 }
 
 .styles-table th {
-  background-color: var(--snow);
+  background-color: var(--background-2);
+}
+
+.styles-table td {
+  background-color: var(--background-1);
+}
+
+.text-default {
+  margin: 0;
+  font-family: var(--font-family-regular);
+  color: var(--foreground-1);
+}
+
+/* Light Mode */
+body.light .text-default {
+  color: var(--foreground-1);
+}
+
+/* Dark Mode */
+body.dark .text-default {
+  color: var(--foreground-1);
 }
