@@ -16,11 +16,7 @@ const Accordion = ({ title, children }) => {
         <div className="accordion-header" onClick={toggleAccordion}>
           <h3 className="headline">{title}</h3>
           <button className={`accordion-toggle ${isOpen ? "open" : ""}`}>
-            {isOpen ? (
-              <FaChevronDown className="chevron-icon" />
-            ) : (
-              <FaChevronDown className="chevron-icon" />
-            )}
+            <FaChevronDown className="chevron-icon" />
           </button>
         </div>
         {isOpen && <div className="accordion-content">{children}</div>}
