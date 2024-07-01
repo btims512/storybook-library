@@ -8,7 +8,7 @@
 .dropdown-container {
   display: flex;
   flex-direction: row;
-  gap: 16px; 
+  gap: var(--s-16); 
   flex-wrap: wrap;
 }
 
@@ -18,10 +18,10 @@
   padding: var(--s-8);
   border: none;
   border-radius: var(--radius-default);
-  background-color: var(--white);
-  font-family: 'SF Pro Text Regular';
-  font-size: 14px;
-  color: var(--black);
+  background-color: var(--background-1);
+  font-family: var(--font-family-regular);
+  font-size: var(--text-body-1);
+  color: var(--foreground-1);
   cursor: pointer;
   text-align: left;
   justify-content: space-between;
@@ -30,7 +30,7 @@
 }
 
 .dropdown-toggle:focus {
-  outline: 2px solid var(--primary-color); /* Add a focus outline */
+  outline: 2px solid var(--primary-brand); /* Add a focus outline */
 }
 
 .dropdown-menu {
@@ -39,9 +39,9 @@
   width: -webkit-fill-available;
   list-style: none;
   margin-top: 4px;
-  border: 1px solid var(--light-gray);
+  border: 1px solid var(--border-1);
   border-radius: var(--radius-default);
-  background-color: var(--white);
+  background-color: var(--background-1);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding-left: 0px;
   text-align: center;
@@ -51,14 +51,14 @@
 .dropdown-option {
   padding: var(--s-16);
   cursor: pointer;
-  font-family: 'SF Pro Text Regular';
-  font-size: 14px;
-  color: var(--black);
-  border-bottom: 1px solid #ccc;
+  font-family: var(--font-family-regular);
+  font-size: var(--text-body-1);
+  color: var(--foreground-1);
+  border-bottom: 1px solid var(--border-1);
 }
 
 .dropdown-option:hover, .dropdown-option:focus {
-  background-color: var(--snow);
+  background-color: var(--background-2);
 }
 
 .chevron-icon {

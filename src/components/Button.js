@@ -78,7 +78,7 @@ OutlinedButton.defaultProps = {
   style: {},
 };
 
-export const DisabledButton = ({
+export const GhostButton = ({
   label,
   onClick,
   className,
@@ -96,7 +96,7 @@ export const DisabledButton = ({
   />
 );
 
-DisabledButton.propTypes = {
+GhostButton.propTypes = {
   label: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
   className: PropTypes.string,
@@ -104,7 +104,7 @@ DisabledButton.propTypes = {
   style: PropTypes.object,
 };
 
-DisabledButton.defaultProps = {
+GhostButton.defaultProps = {
   className: "btn-padding",
   styleName: "radius-default",
   style: {},

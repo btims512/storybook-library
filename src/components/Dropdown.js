@@ -30,25 +30,25 @@ const Dropdown = ({ options, defaultLabel }) => {
       </button>
       {isOpen && (
         <div className="options-container">
-        <ul className="dropdown-menu" role="listbox">
-          {options.map((option, index) => (
-            <li
-              key={index}
-              className="dropdown-option"
-              role="option"
-              tabIndex="0"
-              aria-selected={selectedOption === option}
-              onClick={() => handleOptionClick(option)}
-              onKeyPress={(e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                  handleOptionClick(option);
-                }
-              }}
-            >
-              {option}
-            </li>
-          ))}
-        </ul>
+          <ul className="dropdown-menu" role="listbox">
+            {options.map((option, index) => (
+              <li
+                key={index}
+                className="dropdown-option"
+                role="option"
+                tabIndex="0"
+                aria-selected={selectedOption === option}
+                onClick={() => handleOptionClick(option)}
+                onKeyPress={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    handleOptionClick(option);
+                  }
+                }}
+              >
+                {option}
+              </li>
+            ))}
+          </ul>
         </div>
       )}
     </div>
