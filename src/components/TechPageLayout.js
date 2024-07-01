@@ -6,7 +6,7 @@ import IconCard from "./IconCard";
 const TechPageLayout = ({ title, iconCards }) => {
   return (
     <div className="tech-page-layout">
-      <div className="tech-page-title">{title}</div>
+      <div className="section-title">{title}</div>
       <div className="tech-page-cards">
         {iconCards.map((iconCard, index) => (
           <IconCard key={index} {...iconCard} />

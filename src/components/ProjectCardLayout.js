@@ -6,6 +6,7 @@ import "./ProjectCardLayout.css";
 const ProjectCardLayout = ({ projects }) => {
   return (
     <div className="project-card-outer-container">
+      <div className="section-title">Projects</div>
       <div className="card-container">
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />

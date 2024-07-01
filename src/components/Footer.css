@@ -1,8 +1,21 @@
+.footer-outer-container {
+  display: flex;
+  padding: var(--s-0) var(--s-16); 
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--s-24);
+  align-self: stretch;
+  max-width: 1280px;
+  margin: 0 auto; 
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .footer {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: var(--background-2);
+  max-width: 1280px; 
   gap: var(--s-24);
   height: 252px;
   box-sizing: border-box; 
@@ -21,7 +34,7 @@
 
 .footer-text {
   font: var(--text-title-2);
-  color: var(--foreground-2);
+  color: var(--foreground-2)!important;
 }
 
 .footer-nav {
@@ -29,7 +42,8 @@
   justify-content: start;
   flex-direction: column;
   gap: var(--s-32);
-  padding: var(--s-0) var(--s-16) var(--s-80) var(--s-16);
+  /* padding: var(--s-0) var(--s-16) var(--s-80) var(--s-16); */
+  padding-bottom: var(--s-80);
   box-sizing: border-box; 
 }
 
@@ -54,4 +68,11 @@
   border-radius: var(--radius-default);
   background-color: white; 
   padding: var(--s-4);
+}
+
+/* Large Breakpoint */
+@media (min-width: 1024px) {
+  .footer-outer-container {
+    padding: var(--s-0) var(--s-32); 
+  }
 }

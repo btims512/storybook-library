@@ -6,7 +6,7 @@ import Hero from "../components/Hero";
 import ProjectCardLayout from "../components/ProjectCardLayout";
 import About from "../components/About";
 import TechPageLayout from "../components/TechPageLayout";
-import AppleIcon from "./Assets/project-logo-apple@2x.png";
+import SbIcon from "./Assets/project-logo-storybook@2x.png";
 import exampleIcon from "./Assets/image-ben-2@3x.png";
 import imageBen from "./Assets/image-ben-1@3x.png";
 import Button from "../components/Button";
@@ -21,8 +21,8 @@ export default {
 
 const Template = (args) => <PageLayout {...args} />;
 
-export const Default = Template.bind({});
-Default.args = {
+export const Main = Template.bind({});
+Main.args = {
   navbar: (
     <NavBar
       links={[
@@ -51,7 +51,7 @@ Default.args = {
           tech: "React, CSS, Storybook",
           codeLink: "https://github.com",
           visitLink: "https://example.com",
-          icon: AppleIcon,
+          icon: SbIcon,
         },
         {
           title: "Project Title 2",
@@ -59,7 +59,7 @@ Default.args = {
           tech: "React, CSS, Storybook",
           codeLink: "https://github.com",
           visitLink: "https://example.com",
-          icon: AppleIcon,
+          icon: SbIcon,
         },
         {
           title: "Project Title 3",
@@ -67,7 +67,7 @@ Default.args = {
           tech: "React, CSS, Storybook",
           codeLink: "https://github.com",
           visitLink: "https://example.com",
-          icon: AppleIcon,
+          icon: SbIcon,
         },
         {
           title: "Project Title 4",
@@ -75,7 +75,7 @@ Default.args = {
           tech: "React, CSS, Storybook",
           codeLink: "https://github.com",
           visitLink: "https://example.com",
-          icon: AppleIcon,
+          icon: SbIcon,
         },
         {
           title: "Project Title 5",
@@ -83,7 +83,7 @@ Default.args = {
           tech: "React, CSS, Storybook",
           codeLink: "https://github.com",
           visitLink: "https://example.com",
-          icon: AppleIcon,
+          icon: SbIcon,
         },
         {
           title: "Project Title 6",
@@ -91,7 +91,7 @@ Default.args = {
           tech: "React, CSS, Storybook",
           codeLink: "https://github.com",
           visitLink: "https://example.com",
-          icon: AppleIcon,
+          icon: SbIcon,
         },
       ]}
     />

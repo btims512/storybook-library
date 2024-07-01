@@ -17,7 +17,7 @@ body.light .project-card {
 
 /* Dark Mode */
 body.dark .project-card {
-  background: linear-gradient(180deg, #0E131F 0%, #162032 100%);
+  background: var(--background-2);
 }
 
 .project-card-header {
@@ -48,7 +48,7 @@ body.dark .project-card {
 }
 
 .project-card-description {
-  color: var(--foreground-2);
+  color: var(--foreground-2)!important;
   font: var(--text-body-1);
   line-height: 16px;
   margin: 0;

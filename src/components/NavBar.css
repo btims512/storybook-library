@@ -63,12 +63,14 @@ body, html {
 .hamburger div {
   content: '';
   display: block;
-  width: 24px;
-  height: 3px;
+  width: 24px; 
+  height: 3px; 
   background-color: var(--foreground-1);
   position: absolute;
   transition: all 0.3s;
+  border-radius: 4px; 
 }
+
 
 .hamburger:before {
   top: 0;
@@ -248,8 +250,8 @@ body, html {
 .side-nav-link,
 .icon-placeholder {
   font: var(--text-body-1);
-  padding: 12px;
-  margin-left: -12px;
+  /* padding: 12px; */
+  /* margin-left: -12px; */
 }
 
 /* Theme Switcher styles */
@@ -271,7 +273,7 @@ body, html {
   position: absolute;
   cursor: pointer;
   top: 0;
-  left: 0;
+  left: -6px;
   right: 0;
   bottom: 0;
   background-color: var(--border-1);

@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectCardLayout from "../components/ProjectCardLayout";
-import AppleIcon from "./Assets/project-logo-apple@2x.png";
+import SbIcon from "./Assets/project-logo-storybook@2x.png";
 
 export default {
   title: "Layouts/ProjectCardLayout",
@@ -11,6 +11,7 @@ const Template = (args) => <ProjectCardLayout {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
+  title: "Projects",
   projects: [
     {
       title: "Project Title 1",
@@ -18,7 +19,7 @@ Default.args = {
       tech: "React, CSS, Storybook",
       codeLink: "https://github.com",
       visitLink: "https://example.com",
-      icon: AppleIcon,
+      icon: SbIcon,
     },
     {
       title: "Project Title 2",
@@ -26,7 +27,7 @@ Default.args = {
       tech: "React, CSS, Storybook",
       codeLink: "https://github.com",
       visitLink: "https://example.com",
-      icon: AppleIcon,
+      icon: SbIcon,
     },
     {
       title: "Project Title 3",
@@ -34,7 +35,7 @@ Default.args = {
       tech: "React, CSS, Storybook",
       codeLink: "https://github.com",
       visitLink: "https://example.com",
-      icon: AppleIcon,
+      icon: SbIcon,
     },
     {
       title: "Project Title 4",
@@ -42,7 +43,7 @@ Default.args = {
       tech: "React, CSS, Storybook",
       codeLink: "https://github.com",
       visitLink: "https://example.com",
-      icon: AppleIcon,
+      icon: SbIcon,
     },
     {
       title: "Project Title 5",
@@ -50,7 +51,7 @@ Default.args = {
       tech: "React, CSS, Storybook",
       codeLink: "https://github.com",
       visitLink: "https://example.com",
-      icon: AppleIcon,
+      icon: SbIcon,
     },
     {
       title: "Project Title 6",
@@ -58,7 +59,7 @@ Default.args = {
       tech: "React, CSS, Storybook",
       codeLink: "https://github.com",
       visitLink: "https://example.com",
-      icon: AppleIcon,
+      icon: SbIcon,
     },
   ],
 };

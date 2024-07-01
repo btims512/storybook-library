@@ -5,29 +5,32 @@
   align-items: flex-start;
   gap: var(--s-24);
   align-self: stretch;
-  color: var(--foreground-1); 
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.tech-page-title {
+.section-title {
   font: var(--text-title-2);
   color: var(--foreground-2);
+  align-self: flex-start;
 }
 
 .tech-page-cards {
   display: flex;
-  flex-direction: column;
-  gap: var(--s-24);
-  width: 100%; 
+  flex-wrap: wrap;
+  gap: var(--s-16);
+  justify-content: space-between;
+  width: 100%;
 }
 
-@media screen and (min-width: 768px) {
+
+
+/* Large Breakpoint */
+@media (min-width: 1024px) {
   .tech-page-layout {
     padding: var(--s-0) var(--s-32);
-  }
-  
-  .tech-page-cards {
-    flex-direction: row;
-    justify-content: space-between;
   }
 }
 
