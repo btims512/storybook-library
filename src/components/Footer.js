@@ -12,7 +12,7 @@ const Footer = () => {
           <nav className="footer-nav">
             <Text className="footer-text">Contact</Text>
             <a href="mailto:info@bentims.com" className="footer-link">
-              info@bentims.com
+              example@example.com
             </a>
             <div className="icon-container">
               <GitHubIcon className="icon github-icon" />

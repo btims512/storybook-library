@@ -30,7 +30,7 @@
 }
 
 .dropdown-toggle:focus {
-  outline: 2px solid var(--primary-brand); /* Add a focus outline */
+  outline: 2px solid var(--primary-brand); 
 }
 
 .dropdown-menu {
@@ -64,10 +64,11 @@
 .chevron-icon {
   transition: transform 0.3s ease;
   margin-left: 10px;
+  transform: rotate(180deg); 
 }
 
 .dropdown-toggle.open .chevron-icon {
-  transform: rotate(180deg);
+  transform: rotate(0deg); 
 }
 
 .dropdown-option:last-child {

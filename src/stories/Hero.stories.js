@@ -12,8 +12,8 @@ const Template = (args) => <Hero {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  header: "Benjamin Tims",
-  subtitle: "Full Stack Software Engineer",
+  header: "Benjamin",
+  subtitle: "Frontend Software Engineer",
   picture: imageBen,
   button: <Button label="View Resume" onClick={() => {}} />,
 };

@@ -1,7 +1,8 @@
 {
   "name": "react-storybook-library-v3",
-  "version": "0.1.0",
+  "version": "0.3.2",
   "private": false,
+  "description": "A library of React components for Storybook.",
   "main": "dist/index.js",
   "files": [
     "dist"
@@ -34,7 +35,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build-storybook": "storybook build"
+    "build-storybook": "build-storybook",
+    "prepublishOnly": "npm run build"
   },
   "eslintConfig": {
     "extends": [
@@ -56,6 +58,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@chromatic-com/storybook": "^1.5.0",
     "@storybook/addon-docs": "^8.1.7",
     "@storybook/addon-essentials": "^8.1.6",
