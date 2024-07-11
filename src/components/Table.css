@@ -21,7 +21,6 @@
 
 .text-default {
   margin: 0;
-  font-family: var(--font-family-regular);
   color: var(--foreground-1);
 }
 
@@ -33,4 +32,43 @@ body.light .text-default {
 /* Dark Mode */
 body.dark .text-default {
   color: var(--foreground-1);
+}
+
+.large-title {
+  font: var(--text-large-title);
+}
+
+.title-1 {
+  font: var(--text-title-1);
+}
+
+.title-2 {
+  font: var(--text-title-2);
+}
+
+.title-3 {
+  font: var(--text-title-3);
+}
+
+.headline {
+  font: var(--text-headline);
+}
+
+.body-1 {
+  font: var(--text-body-1);
+}
+
+.label-1 {
+  font: var(--text-label-1);
+}
+
+.body-2 {
+  font: var(--text-body-2);
+}
+
+.label-2 {
+  font-family: var(--font-family-semibold);
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 600; 
 }

@@ -5,64 +5,73 @@ import "./Table.css";
 const stylesInfo = [
   {
     name: "Large-Title",
-    font: "Titillium Web Semibold",
+    className: "large-title",
+    font: "Titillium Web",
     weight: "Semibold",
     size: "32px",
     lineHeight: "40px",
   },
   {
     name: "Title-1",
-    font: "Titillium Web Semibold",
+    className: "title-1",
+    font: "Titillium Web",
     weight: "Semibold",
     size: "28px",
     lineHeight: "40px",
   },
   {
     name: "Title-2",
-    font: "Titillium Web Semibold",
+    className: "title-2",
+    font: "Titillium Web",
     weight: "Semibold",
     size: "22px",
     lineHeight: "28px",
   },
   {
     name: "Title-3",
-    font: "Titillium Web Light",
+    className: "title-3",
+    font: "Titillium Web",
     weight: "Light",
     size: "22px",
     lineHeight: "28px",
   },
   {
     name: "Headline",
-    font: "Titillium Web Regular",
+    className: "headline",
+    font: "Titillium Web",
     weight: "Regular",
     size: "16px",
     lineHeight: "20px",
   },
   {
     name: "Body-1",
-    font: "Titillium Web Regular",
+    className: "body-1",
+    font: "Titillium Web",
     weight: "Regular",
     size: "14px",
     lineHeight: "16px",
   },
   {
     name: "Label-1",
-    font: "Titillium Web Regular",
+    className: "label-1",
+    font: "Titillium Web",
     weight: "Regular",
     size: "14px",
     lineHeight: "16px",
   },
   {
     name: "Body-2",
-    font: "Titillium Web Regular",
+    className: "body-2",
+    font: "Titillium Web",
     weight: "Regular",
     size: "10px",
     lineHeight: "14px",
   },
   {
     name: "Label-2",
-    font: "Titillium Web Regular",
-    weight: "Regular",
+    className: "label-2",
+    font: "Titillium Web",
+    weight: "Semibold",
     size: "10px",
     lineHeight: "14px",
   },
@@ -82,23 +91,21 @@ const FontStylesTable = () => {
       </thead>
       <tbody>
         {stylesInfo.map((style, index) => (
-          <tr key={index}>
+          <tr key={index} className={style.className}>
             <td>
-              <Text className={style.name.replace(" ", "-").toLowerCase()}>
-                {style.name}
-              </Text>
+              <Text className={style.className}>{style.name}</Text>
             </td>
             <td>
-              <Text>{style.font}</Text>
+              <Text className={style.className}>{style.font}</Text>
             </td>
             <td>
-              <Text>{style.weight}</Text>
+              <Text className={style.className}>{style.weight}</Text>
             </td>
             <td>
-              <Text>{style.size}</Text>
+              <Text className={style.className}>{style.size}</Text>
             </td>
             <td>
-              <Text>{style.lineHeight}</Text>
+              <Text className={style.className}>{style.lineHeight}</Text>
             </td>
           </tr>
         ))}

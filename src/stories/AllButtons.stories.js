@@ -1,5 +1,3 @@
-// src/stories/AllButtons.stories.js
-
 import React from "react";
 import Button, { OutlinedButton, GhostButton } from "../components/Button";
 
@@ -20,12 +18,23 @@ export const AllButtons = () => (
       width: "fit-content",
     }}
   >
-    <Button variant="btn--filled" label="Filled Button" onClick={() => {}} />
+    <Button
+      variant="btn--filled"
+      label="Filled Button"
+      onClick={() => {}}
+      aria-label="Filled Button"
+    />
     <OutlinedButton
       variant="btn--outlined"
       label="Outlined Button"
       onClick={() => {}}
+      aria-label="Outlined Button"
     />
-    <GhostButton variant="btn--ghost" label="Ghost Button" onClick={() => {}} />
+    <GhostButton
+      variant="btn--ghost"
+      label="Ghost Button"
+      onClick={() => {}}
+      aria-label="Ghost Button"
+    />
   </div>
 );

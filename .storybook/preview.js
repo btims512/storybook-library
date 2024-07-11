@@ -1,4 +1,3 @@
-// .storybook/preview.js
 import "../src/global.css";
 import React from "react";
 
@@ -15,6 +14,14 @@ const preview = {
       storySort: {
         order: ["Introduction", "Design Tokens", "Guidelines", "Components"],
         method: "alphabetical",
+      },
+    },
+    a11y: {
+      config: {
+        rules: [
+          { id: "color-contrast", enabled: true },
+          { id: "keyboard-navigation", enabled: true },
+        ],
       },
     },
   },

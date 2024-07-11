@@ -3,11 +3,17 @@ import "./ColorPalette.css";
 
 const lightColors = [
   { name: "Primary Brand", className: "primary-brand", hex: "#13ADC7" },
-  { name: "Black", className: "black", hex: "#111111" },
-  { name: "Gray", className: "gray", hex: "#999999" },
-  { name: "Light Gray", className: "light-gray", hex: "#D6D6D6" },
-  { name: "Snow", className: "snow", hex: "#F3F3F3" },
-  { name: "White", className: "white", hex: "#FFFFFF" },
+  { name: "Accent", className: "accent", hex: "#F43737" },
+  { name: "Foreground 1", className: "foreground-1", hex: "#111111" },
+  { name: "Foreground 2", className: "foreground-2", hex: "#999999" },
+  { name: "Border 1", className: "border-1", hex: "#D6D6D6" },
+  { name: "Background 1", className: "background-1", hex: "#FFFFFF" },
+  { name: "Background 2", className: "background-2", hex: "#FAFAFA" },
+  {
+    name: "Gradient",
+    className: "gradient",
+    hex: "linear-gradient(to right, #13ADC7, #B133FF)",
+  },
 ];
 
 const darkColors = [
@@ -38,11 +44,16 @@ const darkColors = [
     className: "background-2-dark",
     hex: "#162032",
   },
+  {
+    name: "Gradient (Dark)",
+    className: "gradient-dark",
+    hex: "linear-gradient(to right, #13ADC7, #B133FF)",
+  },
 ];
 
 const ColorPalette = () => {
   return (
-    <div>
+    <div className="colors-div">
       <h2 className="palette-title">Light Mode Colors</h2>
       <div className="color-palette">
         {lightColors.map((color) => (
