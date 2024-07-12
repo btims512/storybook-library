@@ -1,6 +1,6 @@
 import React from "react";
 import IconCard from "../components/IconCard";
-import { ReactComponent as FrontEnd } from "./Assets/react-2.svg";
+import { ReactComponent as FrontEnd } from "./assets/react-2.svg";
 // import { ReactComponent as BackEnd } from "./Assets/icon-data.svg";
 // import { ReactComponent as FrameWork } from "./Assets/icon-js.svg";
 

@@ -1,8 +1,8 @@
 import React from "react";
 import "./Footer.css";
 import Text from "../components/Text";
-import { ReactComponent as GitHubIcon } from "../stories/Assets/icon-github.svg";
-import { ReactComponent as LinkedInIcon } from "../stories/Assets/icon-linkedin.svg";
+import { ReactComponent as GitHubIcon } from "../stories/assets/icon-github.svg";
+import { ReactComponent as LinkedInIcon } from "../stories/assets/icon-linkedin.svg";
 
 const Footer = () => {
   return (

@@ -23,7 +23,7 @@ const NavBar = ({ links }) => {
           </nav>
           <nav className={`side-menu ${menuOpen ? "open" : ""}`}>
             {links.map((link, index) => (
-              <a key={index} href={link.href} className="side-nav-link label-1">
+              <a key={index} href={link.href} className="side-nav-link headline">
                 {link.label}
               </a>
             ))}

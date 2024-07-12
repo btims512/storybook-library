@@ -74,11 +74,14 @@ body.dark {
   --foreground-1: #FFFFFF;
   --foreground-2: #869DA9;
   --border-1: #384767;
-  --background-1: rgb(15, 22, 36);
-  --background-2: #162032;
+  --background-1: #0F1624; 
+  --background-2: #162032; 
   --gradient: linear-gradient(to right, #13ADC7, #B133FF);
   background-color: var(--background-1);
+  --dark-gradient: linear-gradient(180deg, var(--background-2) 0%, var(--background-1) 100%);
+  /* --dark-gradient: linear-gradient(180deg, var(--background-1) 0%, var(--background-2) 100%); */
 }
+
 
 /* Semibold */
 @font-face {

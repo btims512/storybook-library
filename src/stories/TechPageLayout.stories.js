@@ -1,8 +1,8 @@
 import React from "react";
 import TechPageLayout from "../components/TechPageLayout";
-import { ReactComponent as FrontEndIcon } from "./Assets/react-2.svg";
-import { ReactComponent as BackEndIcon } from "./Assets/icon-data.svg";
-import { ReactComponent as FrameworkIcon } from "./Assets/icon-js.svg";
+import { ReactComponent as FrontEndIcon } from "./assets/react-2.svg";
+import { ReactComponent as BackEndIcon } from "./assets/icon-data.svg";
+import { ReactComponent as FrameworkIcon } from "./assets/icon-js.svg";
 
 export default {
   title: "Layouts/TechPageLayout",

@@ -71,17 +71,37 @@
   color: var(--primary-brand); 
 }
 
+/* Dark Mode Styles */
 body.dark .btn--filled {
-  background-color: #B133FF; /* Dark mode primary color */
+  background-color: var(--primary-brand); /* Dark mode primary color */
+}
+
+body.dark .btn--filled:hover {
+  background-color: var(--foreground-1); /* Hover background for filled button in dark mode */
 }
 
 body.dark .btn--outlined {
-  border: 1px solid #B133FF; /* Dark mode primary color */
-  color: #B133FF;
+  border: 1px solid var(--primary-brand); /* Dark mode primary color */
+  background-color: var(--background-1);
+  color: var(--primary-brand);
+  height: 40px;
+}
+
+body.dark .btn--outlined:hover {
+  background-color: var(--background-2); /* Dark mode primary color */
+  border: 1px solid var( --foreground-1);
+  color: var(--foreground-1);
+  height: 40px;
 }
 
 body.dark .btn--ghost {
-  color: #B133FF;
+  color: var(--primary-brand);
+  background-color: var(--background-1);
+}
+
+body.dark .btn--ghost:hover {
+  background-color: var(--background-2);
+  color: var(--primary-brand);
 }
 
 .btn.label-1 {

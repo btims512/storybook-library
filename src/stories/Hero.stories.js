@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "../components/Hero";
 import Button from "../components/Button";
-import imageBen from "./Assets/image-ben-1@3x.png";
+import imageBen from "./assets/image-ben-1@3x.png";
 
 export default {
   title: "Components/Hero",

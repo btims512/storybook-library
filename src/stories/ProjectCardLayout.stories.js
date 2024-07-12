@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectCardLayout from "../components/ProjectCardLayout";
-import SbIcon from "./Assets/project-logo-storybook@2x.png";
+import SbIcon from "./assets/project-logo-storybook@2x.png";
 
 export default {
   title: "Layouts/ProjectCardLayout",

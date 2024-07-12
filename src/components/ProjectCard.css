@@ -6,7 +6,7 @@
   align-items: flex-start;
   gap: var(--s-24);
   border-radius: var(--radius-card);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   box-sizing: border-box;
 }
 
@@ -17,7 +17,7 @@ body.light .project-card {
 
 /* Dark Mode */
 body.dark .project-card {
-  background: var(--background-2);
+  background: var(--dark-gradient); /* Use the corrected dark gradient variable */
 }
 
 .project-card-header {
@@ -74,25 +74,53 @@ body.dark .project-card {
   justify-content: center;
 }
 
-.project-card-buttons .btn--reversed:hover {
-  background-color: var(--background-1);
-  border: 1px solid var(--primary-brand);
-}
-
 /* Dark Mode Button Font Color */
 body.dark .project-card-buttons .btn {
   color: var(--background-1);
 }
 
-/* Light Mode Hover */
+/* Light Mode Hover for Reversed Buttons */
 body.light .project-card-buttons .btn--reversed:hover {
   border-color: var(--primary-brand);
   color: var(--primary-brand);
 }
 
-/* Dark Mode Hover */
+/* Dark Mode Hover for Reversed Buttons */
 body.dark .project-card-buttons .btn--reversed:hover {
   border-color: var(--primary-brand);
+  color: var(--primary-brand);
+}
+
+/* Apply Dark Mode Button Styles */
+body.dark .project-card-buttons .btn--filled {
+  background-color: var(--primary-brand);
+}
+
+body.dark .project-card-buttons .btn--filled:hover {
+  background-color: var(--foreground-1);
+}
+
+body.dark .project-card-buttons .btn--outlined {
+  border: 1px solid var(--primary-brand);
+  background-color: var(--background-1);
+  color: var(--primary-brand);
+  height: 40px;
+}
+
+body.dark .project-card-buttons .btn--outlined:hover {
+  background-color: var(--background-2);
+  border: 1px solid var(--foreground-1);
+  color: var(--foreground-1);
+  height: 40px;
+}
+
+body.dark .project-card-buttons .btn--ghost {
+  color: var(--primary-brand);
+  background-color: var(--background-1);
+}
+
+body.dark .project-card-buttons .btn--ghost:hover {
+  background-color: var(--background-2);
   color: var(--primary-brand);
 }
 

@@ -6,13 +6,13 @@ import Hero from "../components/Hero";
 import ProjectCardLayout from "../components/ProjectCardLayout";
 import About from "../components/About";
 import TechPageLayout from "../components/TechPageLayout";
-import SbIcon from "./Assets/project-logo-storybook@2x.png";
-import exampleIcon from "./Assets/image-ben-2@3x.png";
-import imageBen from "./Assets/image-ben-1@3x.png";
+import SbIcon from "./assets/project-logo-storybook@2x.png";
+import exampleIcon from "./assets/image-ben-2@3x.png";
+import imageBen from "./assets/image-ben-1@3x.png";
 import Button from "../components/Button";
-import { ReactComponent as FrontEndIcon } from "./Assets/react-2.svg";
-import { ReactComponent as BackEndIcon } from "./Assets/icon-data.svg";
-import { ReactComponent as FrameworkIcon } from "./Assets/icon-js.svg";
+import { ReactComponent as FrontEndIcon } from "./assets/react-2.svg";
+import { ReactComponent as BackEndIcon } from "./assets/icon-data.svg";
+import { ReactComponent as FrameworkIcon } from "./assets/icon-js.svg";
 
 export default {
   title: "Layouts/PageLayout",

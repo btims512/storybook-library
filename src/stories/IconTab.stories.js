@@ -1,6 +1,6 @@
 import React from "react";
 import IconTab from "../components/IconTab";
-import { ReactComponent as GitHubIcon } from "../stories/Assets/icon-github.svg";
+import { ReactComponent as GitHubIcon } from "../stories/assets/icon-github.svg";
 
 export default {
   title: "Components/IconTab",
