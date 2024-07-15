@@ -1,7 +1,15 @@
+// babel.config.js //
 module.exports = {
-  presets: [
-    "@babel/preset-env",
-    "@babel/preset-react",
-    "@babel/preset-typescript",
+  presets: ["@babel/preset-env", "@babel/preset-react"],
+  plugins: [
+    function myCustomPlugin() {
+      return {
+        visitor: {
+          Program(path, state) {
+            console.log(`Babel is processing: ${state.filename}`);
+          },
+        },
+      };
+    },
   ],
 };

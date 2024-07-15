@@ -23,7 +23,7 @@ const Template = (args) => {
   const renderLayoutContent = () => (
     <>
       <div className="inner-div one">
-        <div style={{ textAlign: "center" }}>// 1 //</div>
+        <div style={{ textAlign: "center" }}>{/* 1 */}</div>
         <div className="Title">
           <Text className="large-title">Here's a title</Text>
         </div>
@@ -43,7 +43,7 @@ const Template = (args) => {
         </div>
       </div>
       <div className="inner-div two">
-        <div style={{ textAlign: "center" }}>// 2 //</div>
+        <div style={{ textAlign: "center" }}>{/* 2 */}</div>
         <div className="input-container">
           <TextInput
             value={input1}
@@ -70,7 +70,7 @@ const Template = (args) => {
           </div>
         </div>
       </div>
-      <div style={{ textAlign: "center" }}>// 3 //</div>
+      <div style={{ textAlign: "center" }}>{/* 3 */}</div>
     </>
   );
 

@@ -14,6 +14,5 @@ Default.args = {
   href: "#",
   children: "Link",
   newWindow: false,
-  className: "storybook-link",
-  className: "label-1",
+  className: "storybook-link label-1",
 };

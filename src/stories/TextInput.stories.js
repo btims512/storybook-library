@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import TextInput from "../components/TextInput";
-import "../components/TextInput.css"; // Ensure CSS is imported
+import "../components/TextInput.css";
 
 export default {
   title: "Components/TextInput",
   component: TextInput,
   argTypes: {
-    count: { control: { type: "number", min: 1, max: 20 } }, // Control for number of inputs
-    placeholder: { control: "text" }, // Control for placeholder text
-    className: { table: { disable: true } }, // Hide className from controls
-    styleName: { table: { disable: true } }, // Hide styleName from controls
+    count: { control: { type: "number", min: 1, max: 20 } },
+    placeholder: { control: "text" },
+    className: { table: { disable: true } },
+    styleName: { table: { disable: true } },
   },
   parameters: {
     layout: "centered",
@@ -19,9 +19,9 @@ export default {
 const Template = ({ count, ...args }) => {
   const [values, setValues] = useState(Array(count).fill(""));
 
-  const handleChange = (index, value) => {
+  const handleChange = (index, event) => {
     const newValues = [...values];
-    newValues[index] = value;
+    newValues[index] = event.target.value;
     setValues(newValues);
   };
 
@@ -32,6 +32,7 @@ const Template = ({ count, ...args }) => {
           key={index}
           value={values[index]}
           placeholder={args.placeholder}
+          onChange={(event) => handleChange(index, event)}
           {...args}
         />
       ))}
