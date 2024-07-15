@@ -1,6 +1,6 @@
 {
   "name": "react-storybook-library-v3",
-  "version": "0.3.2",
+  "version": "3.0.0",
   "private": false,
   "description": "A library of React components for Storybook.",
   "main": "dist/index.js",
