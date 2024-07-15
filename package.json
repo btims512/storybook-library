@@ -12,7 +12,8 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "src/components/**/*.css"
   ],
   "repository": {
     "type": "git",
