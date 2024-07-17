@@ -19,6 +19,7 @@ export { default as NavBar } from "./src/components/NavBar";
 export { default as PageLayout } from "./src/components/PageLayout";
 export { default as ProgressBar } from "./src/components/ProgressBar";
 export { default as ProjectCard } from "./src/components/ProjectCard";
+export { default as NdaProjectCard } from "./src/components/NdaProjectCard";
 export { default as ProjectCardLayout } from "./src/components/ProjectCardLayout";
 export { default as RadiusUnits } from "./src/components/RadiusUnits";
 export { default as ResponsiveLayout } from "./src/components/ResponsiveLayout";
