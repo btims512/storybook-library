@@ -43,13 +43,13 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
-  "scripts": {
-    "storybook": "storybook dev -p 6006",
-    "build": "rollup -c",
-    "test": "react-scripts test",
-    "build-storybook": "build-storybook",
-    "prepublishOnly": "npm run build"
-  },
+"scripts": {
+  "storybook": "storybook dev -p 6006",
+  "build": "rollup -c",
+  "test": "react-scripts test",
+  "build-storybook": "build-storybook -o storybook-static",
+  "prepublishOnly": "npm run build"
+},
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -88,6 +88,7 @@
     "@storybook/addon-links": "^8.2.2",
     "@storybook/addon-onboarding": "^8.1.6",
     "@storybook/blocks": "^8.1.6",
+    "@storybook/cli": "^8.2.4",
     "@storybook/preset-create-react-app": "^8.1.6",
     "@storybook/react": "^8.1.6",
     "@storybook/react-webpack5": "^8.2.2",
