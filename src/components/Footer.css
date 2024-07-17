@@ -34,7 +34,7 @@
 
 .footer-text {
   font: var(--text-title-2);
-  color: var(--foreground-2)!important;
+  color: var(--foreground-2) !important;
 }
 
 .footer-nav {
@@ -42,7 +42,6 @@
   justify-content: start;
   flex-direction: column;
   gap: var(--s-32);
-  /* padding: var(--s-0) var(--s-16) var(--s-80) var(--s-16); */
   padding-bottom: var(--s-80);
   box-sizing: border-box; 
 }
@@ -51,6 +50,7 @@
   font: var(--text-body-1);
   color: var(--primary-brand);
   text-decoration: none;
+  width: fit-content;
 }
 
 .footer-link:hover {
@@ -62,12 +62,28 @@
   gap: var(--s-12);
 }
 
+.icon-container a {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.icon-container a:hover {
+  color: inherit; 
+}
+
 .icon-container svg {
   width: 32px;
   height: 32px;
   border-radius: var(--radius-default);
-  background-color: white; 
+  background-color: var(--svg-background);
+  fill: var(--svg-fill);
   padding: var(--s-4);
+  transition: background-color 0.3s, fill 0.3s;
+}
+
+.icon-container a:hover svg {
+  background-color: var(--svg-fill);
+  fill: var(--svg-background);
 }
 
 /* Large Breakpoint */

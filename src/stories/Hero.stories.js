@@ -1,3 +1,4 @@
+// Hero.stories.js
 import React from "react";
 import Hero from "../components/Hero";
 import Button from "../components/Button";

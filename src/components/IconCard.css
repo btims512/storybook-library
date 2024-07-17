@@ -18,7 +18,7 @@
 
 
 .icon-card-title {
-  color: var(--foreground-1, #111111);
+  color: var(--foreground-1);
   font-family: var(--font-family-semibold, "Titillium Web");
   font-size: var(--text-size-md, 16px);
   font-weight: 600;
@@ -26,7 +26,7 @@
 }
 
 .icon-card-description {
-  color: var(--foreground-2, #999999);
+  color: var(--foreground-1);
   font: var(--text-body-1);
   margin: 0;
 }

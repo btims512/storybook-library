@@ -1,6 +1,6 @@
 {
   "name": "react-storybook-library-v3",
-  "version": "3.0.0",
+  "version": "3.2.2",
   "private": false,
   "description": "A library of React components for Storybook.",
   "main": "dist/index.js",
@@ -9,11 +9,16 @@
     ".": {
       "import": "./dist/index.esm.js",
       "require": "./dist/index.js"
-    }
+    },
+    "./global.css": "./dist/global.css",
+    "./assets/icon-react.svg": "./dist/assets/icon-react.svg",
+    "./assets/icon-backend.png": "./dist/assets/icon-backend.png",
+    "./assets/icon-framework.png": "./dist/assets/icon-framework.png"
   },
   "files": [
     "dist",
-    "src/components/**/*.css"
+    "dist/global.css",
+    "dist/assets"
   ],
   "repository": {
     "type": "git",
@@ -40,7 +45,7 @@
   },
   "scripts": {
     "storybook": "storybook dev -p 6006",
-    "build": "rollup -c --logLevel debug",
+    "build": "rollup -c",
     "test": "react-scripts test",
     "build-storybook": "build-storybook",
     "prepublishOnly": "npm run build"
@@ -92,6 +97,7 @@
     "prop-types": "^15.8.1",
     "rollup": "^2.52.7",
     "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",

@@ -7,6 +7,7 @@ import postcss from "rollup-plugin-postcss";
 import mdx from "@mdx-js/rollup";
 import url from "@rollup/plugin-url";
 import svgr from "@svgr/rollup";
+import copy from "rollup-plugin-copy";
 
 export default {
   input: "index.js",
@@ -33,13 +34,24 @@ export default {
       extensions: [".js", ".jsx"],
     }),
     commonjs(),
-    postcss(),
+    postcss({
+      extensions: [".css"],
+      extract: false, // Extract CSS to a separate file
+    }),
     mdx(),
     url({
-      include: ["**/*.svg"],
-      limit: 0,
+      include: ["**/*.svg", "**/*.png", "**/*.jpg", "**/*.jpeg"],
+      limit: 0, // Always include files as base64 data
+      emitFiles: true, // Emit files to the output directory
     }),
     svgr(),
     terser(),
+    copy({
+      targets: [
+        { src: "src/global.css", dest: "dist" },
+        { src: "public/fonts/*", dest: "dist/fonts" },
+        { src: "src/stories/assets/*", dest: "dist/assets" }, // Copy all assets to the dist/assets folder
+      ],
+    }),
   ],
 };

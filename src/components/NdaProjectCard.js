@@ -4,15 +4,8 @@ import "./ProjectCard.css";
 import Text from "./Text";
 import Button from "./Button";
 
-const ProjectCard = ({
-  title,
-  description,
-  tech,
-  codeLink,
-  visitLink,
-  icon,
-}) => {
-  console.log({ title, description, tech, codeLink, visitLink, icon }); // Add this line
+const NdaProjectCard = ({ title, description, tech, icon }) => {
+  console.log({ title, description, tech, icon });
 
   return (
     <div className="project-card">
@@ -28,36 +21,28 @@ const ProjectCard = ({
       <Text className="project-card-description">{description}</Text>
       <div className="project-card-buttons">
         <Button
-          label="Code"
-          onClick={() => window.open(codeLink, "_blank")}
+          label="Details unavailable due to NDA"
+          onClick={() => alert("Details unavailable due to NDA")}
           variant="btn--outlined"
-        />
-        <Button
-          label="Visit"
-          onClick={() => window.open(visitLink, "_blank")}
-          variant="btn--outlined"
+          style={{ width: "100%" }}
         />
       </div>
     </div>
   );
 };
 
-ProjectCard.propTypes = {
+NdaProjectCard.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   tech: PropTypes.string.isRequired,
-  codeLink: PropTypes.string.isRequired,
-  visitLink: PropTypes.string.isRequired,
   icon: PropTypes.string,
 };
 
-ProjectCard.defaultProps = {
+NdaProjectCard.defaultProps = {
   title: "Default Title",
   description: "Default Description",
   tech: "Default Tech",
-  codeLink: "https://default-code-link.com",
-  visitLink: "https://default-visit-link.com",
   icon: "",
 };
 
-export default ProjectCard;
+export default NdaProjectCard;

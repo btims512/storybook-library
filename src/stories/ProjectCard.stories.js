@@ -20,19 +20,3 @@ Default.args = {
     icon: AppleIcon,
   },
 };
-
-// Additional story to test dark mode
-export const DarkMode = Template.bind({});
-DarkMode.args = {
-  project: {
-    title: "Dark Mode Project",
-    description: "Dark Mode Description",
-    tech: "React, CSS, Storybook",
-    codeLink: "https://github.com/darkmode",
-    visitLink: "https://example-darkmode.com",
-    icon: AppleIcon,
-  },
-};
-DarkMode.parameters = {
-  backgrounds: { default: 'dark' },
-};

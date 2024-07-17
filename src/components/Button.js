@@ -92,7 +92,6 @@ export const GhostButton = ({
     className={className}
     styleName={styleName}
     style={style}
-    disabled
   />
 );
 
