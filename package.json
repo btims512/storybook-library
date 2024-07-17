@@ -93,6 +93,7 @@
     "@storybook/react-webpack5": "^8.2.2",
     "@storybook/test": "^8.1.6",
     "@svgr/rollup": "^8.1.0",
+    "chromatic": "^11.5.5",
     "eslint-plugin-storybook": "^0.8.0",
     "prop-types": "^15.8.1",
     "rollup": "^2.52.7",
