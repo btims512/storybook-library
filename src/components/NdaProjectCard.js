@@ -22,8 +22,8 @@ const NdaProjectCard = ({ title, description, tech, icon }) => {
       <div className="project-card-buttons">
         <Button
           label="Details unavailable due to NDA"
-          onClick={() => alert("Details unavailable due to NDA")}
-          variant="btn--outlined"
+          // onClick={() => alert("Details unavailable due to NDA")}
+          variant="btn--ghost"
           style={{ width: "100%" }}
         />
       </div>

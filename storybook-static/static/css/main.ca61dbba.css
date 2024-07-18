@@ -116,21 +116,30 @@ body.dark .icon-container a:hover svg {
 /* Font Faces */
 @font-face {
   font-family: 'Titillium Web Semibold';
-  src: url(../../d4d3eeb6e2367e6796c3.ttf) format('truetype');
+  /* storybook */
+  src: url(../../d4d3eeb6e2367e6796c3.ttf) format('truetype'); 
+  /* npm */
+  /* src: url('./fonts/TitilliumWeb-SemiBold.ttf') format('truetype'); */
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Titillium Web Regular';
-  src: url(../../e53e0538893d432e0635.ttf) format('truetype');
+  /* storybook */
+  src: url(../../e53e0538893d432e0635.ttf) format('truetype'); 
+  /* npm */
+  /* src: url('./fonts/TitilliumWeb-Regular.ttf') format('truetype');  */
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Titillium Web Light';
-  src: url(../../2b8d1521998c2d55bb51.ttf) format('truetype');
+  /* storybook */
+  src: url(../../2b8d1521998c2d55bb51.ttf) format('truetype'); 
+  /* npm */
+  /* src: url('./fonts/TitilliumWeb-Light.ttf') format('truetype');  */
   font-weight: 300;
   font-style: normal;
 }
@@ -228,4 +237,4 @@ body.dark .icon-container a:hover svg {
 }
 
 
-/*# sourceMappingURL=main.d6b08311.css.map*/
+/*# sourceMappingURL=main.ca61dbba.css.map*/

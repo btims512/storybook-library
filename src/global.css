@@ -111,24 +111,30 @@ body.dark .icon-container a:hover svg {
 /* Font Faces */
 @font-face {
   font-family: 'Titillium Web Semibold';
-  /* src: url('../public/fonts/TitilliumWeb-SemiBold.ttf') format('truetype'); */ /* chromatic */
-  src: url('./fonts/TitilliumWeb-SemiBold.ttf') format('truetype'); /* npm */
+  /* storybook */
+  src: url('../public/fonts/TitilliumWeb-SemiBold.ttf') format('truetype'); 
+  /* npm */
+  /* src: url('./fonts/TitilliumWeb-SemiBold.ttf') format('truetype'); */
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Titillium Web Regular';
-  /* src: url('../public/fonts/TitilliumWeb-Regular.ttf') format('truetype'); */ /* chromatic */
-  src: url('./fonts/TitilliumWeb-Regular.ttf') format('truetype'); /* npm */
+  /* storybook */
+  src: url('../public/fonts/TitilliumWeb-Regular.ttf') format('truetype'); 
+  /* npm */
+  /* src: url('./fonts/TitilliumWeb-Regular.ttf') format('truetype');  */
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Titillium Web Light';
-  /* src: url('../public/fonts/TitilliumWeb-Light.ttf') format('truetype'); */ /* chromatic */
-  src: url('./fonts/TitilliumWeb-Light.ttf') format('truetype'); /* npm */
+  /* storybook */
+  src: url('../public/fonts/TitilliumWeb-Light.ttf') format('truetype'); 
+  /* npm */
+  /* src: url('./fonts/TitilliumWeb-Light.ttf') format('truetype');  */
   font-weight: 300;
   font-style: normal;
 }

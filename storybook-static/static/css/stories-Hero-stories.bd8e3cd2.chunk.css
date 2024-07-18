@@ -209,12 +209,13 @@
   gap: 10px;
   border-radius: var(--radius-round);
   background-color: #FFF; 
-  color: var(--primary-brand);
+  color: var(--foreground-2);
 }
 
 .btn--ghost:hover {
   background-color: var(--background-2);
   color: var(--foreground-1);
+  cursor: not-allowed;
 }
 
 .btn--reversed {
@@ -251,13 +252,14 @@ body.dark .btn--outlined:hover {
 }
 
 body.dark .btn--ghost {
-  color: var(--primary-brand);
+  color: var(--foreground-2);
   background-color: var(--background-1);
 }
 
 body.dark .btn--ghost:hover {
   background-color: var(--background-2);
-  color: var(--primary-brand);
+  color: var(--foreground-2);
+  cursor: not-allowed;
 }
 
 .btn.label-1 {
@@ -279,4 +281,4 @@ body.dark .btn--ghost:hover {
 }
 
 
-/*# sourceMappingURL=stories-Hero-stories.c3462e60.chunk.css.map*/
+/*# sourceMappingURL=stories-Hero-stories.bd8e3cd2.chunk.css.map*/
