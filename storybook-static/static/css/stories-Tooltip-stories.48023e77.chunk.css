@@ -1,0 +1,115 @@
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-icon {
+  font-size: 24px;
+  color: var(--primary-brand);
+  cursor: pointer;
+}
+
+.tooltip-box {
+  position: absolute;
+  background-color: var(--primary-brand);
+  color: var(--foreground-1);
+  padding: var(--s-16);
+  border-radius: var(--radius-default);
+  font-family: var(--font-family-regular);
+  font-size: var(--text-body-1);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 10;
+  max-width: 250px; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 200px; 
+  height: auto; 
+  box-sizing: border-box; 
+}
+
+.tooltip-container:hover .tooltip-box {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip-top {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: var(--s-8);
+}
+
+.tooltip-right {
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  margin-left: var(--s-8);
+}
+
+.tooltip-bottom {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: var(--s-8);
+}
+
+.tooltip-left {
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%);
+  margin-right: var(--s-8);
+}
+
+.tooltip-box::after {
+  content: '';
+  position: absolute;
+  border-width: var(--s-8);
+  border-style: solid;
+}
+
+.tooltip-top::after {
+  border-color: var(--primary-brand) transparent transparent transparent; 
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip-right::after {
+  border-color: transparent var(--primary-brand) transparent transparent; 
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.tooltip-bottom::after {
+  border-color: transparent transparent var(--primary-brand) transparent; 
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip-left::after {
+  border-color: transparent transparent transparent var(--primary-brand); 
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.tooltip-box .tooltip-title {
+  font-family: var(--font-family-regular); 
+  font-size: var(--text-label-1);
+  color: var(--foreground-1); 
+  color: #ffffff; 
+  margin-bottom: var(--s-8);
+}
+
+.tooltip-box .tooltip-content {
+  font-family: var(--font-family-regular);
+  font-size: var(--text-body-1);
+  color: #ffffff; 
+}
+
+
+/*# sourceMappingURL=stories-Tooltip-stories.48023e77.chunk.css.map*/

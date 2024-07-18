@@ -2,12 +2,36 @@ import React from "react";
 import Button, { OutlinedButton, GhostButton } from "../components/Button";
 
 export default {
-  title: "Guidelines/AllButtons",
+  title: "Components/Buttons",
   component: Button,
-  parameters: {
-    docsOnly: true,
-  },
 };
+
+export const FilledButton = () => (
+  <Button
+    variant="btn--filled"
+    label="Button"
+    onClick={() => {}}
+    aria-label="Filled Button"
+  />
+);
+
+export const OutlinedBtn = () => (
+  <OutlinedButton
+    variant="btn--outlined"
+    label="Button"
+    onClick={() => {}}
+    aria-label="Outlined Button"
+  />
+);
+
+export const GhostBtn = () => (
+  <GhostButton
+    variant="btn--ghost"
+    label="Button"
+    onClick={() => {}}
+    aria-label="Ghost Button"
+  />
+);
 
 export const AllButtons = () => (
   <div

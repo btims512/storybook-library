@@ -27,7 +27,7 @@ Success.args = {
 export const Danger = Template.bind({});
 Danger.args = {
   type: "danger",
-  content: "O código que você digitou é inválido. Tente novamente.",
+  content: "This is a danger message.",
 };
 
 export const Warning = Template.bind({});

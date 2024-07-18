@@ -1,6 +1,6 @@
 {
   "name": "react-storybook-library-v3",
-  "version": "3.3.3",
+  "version": "3.3.4",
   "private": false,
   "description": "A library of React components for Storybook.",
   "main": "dist/index.js",
@@ -24,7 +24,9 @@
     "type": "git",
     "url": "git+https://github.com/btims512/storybook-library.git"
   },
-  "author": "Ben Tims",
+  "author": {
+    "name": "Ben Tims"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/btims512/storybook-library/issues"
@@ -43,13 +45,14 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
-"scripts": {
-  "storybook": "storybook dev -p 6006",
-  "build": "rollup -c",
-  "test": "react-scripts test",
-  "build-storybook": "build-storybook -o storybook-static",
-  "prepublishOnly": "npm run build"
-},
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build": "rollup -c",
+    "test": "react-scripts test",
+    "build-storybook": "storybook build",
+    "prepublishOnly": "npm run build",
+    "chromatic": "npx chromatic --project-token=chpt_a5595f4fda2be82"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -82,17 +85,19 @@
     "@rollup/plugin-commonjs": "^26.0.1",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-url": "^8.0.2",
-    "@storybook/addon-docs": "^8.2.2",
-    "@storybook/addon-essentials": "^8.2.2",
-    "@storybook/addon-interactions": "^8.2.2",
-    "@storybook/addon-links": "^8.2.2",
-    "@storybook/addon-onboarding": "^8.1.6",
-    "@storybook/blocks": "^8.1.6",
+    "@storybook/addon-actions": "^8.2.4",
+    "@storybook/addon-docs": "^8.2.4",
+    "@storybook/addon-essentials": "^8.2.4",
+    "@storybook/addon-interactions": "^8.2.4",
+    "@storybook/addon-links": "^8.2.4",
+    "@storybook/addon-onboarding": "^8.2.4",
+    "@storybook/addon-webpack5-compiler-swc": "^1.0.4",
+    "@storybook/blocks": "^8.2.4",
     "@storybook/cli": "^8.2.4",
-    "@storybook/preset-create-react-app": "^8.1.6",
-    "@storybook/react": "^8.1.6",
-    "@storybook/react-webpack5": "^8.2.2",
-    "@storybook/test": "^8.1.6",
+    "@storybook/preset-create-react-app": "^8.2.4",
+    "@storybook/react": "^8.2.4",
+    "@storybook/react-webpack5": "^8.2.4",
+    "@storybook/test": "^8.2.4",
     "@svgr/rollup": "^8.1.0",
     "chromatic": "^11.5.5",
     "eslint-plugin-storybook": "^0.8.0",
@@ -105,7 +110,7 @@
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-svg": "^2.0.0",
     "rollup-plugin-terser": "^7.0.2",
-    "storybook": "^8.1.6",
+    "storybook": "^8.2.4",
     "webpack": "^5.91.0"
   }
 }

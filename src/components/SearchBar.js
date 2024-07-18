@@ -49,7 +49,7 @@ SearchBar.defaultProps = {
   placeholder: "Search...",
   buttonLabel: null,
   onButtonClick: null,
-  buttonVariant: "btn--primary",
+  buttonVariant: "btn--filled",
 };
 
 export default SearchBar;

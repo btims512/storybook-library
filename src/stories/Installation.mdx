@@ -1,0 +1,66 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Installation" />
+
+## Getting Started
+
+### For Development
+
+To set up the development environment and start using these components in your projects, you need to clone the repository and install the dependencies:
+
+```bash
+git clone https://github.com/btims512/storybook-library.git
+cd storybook-library
+npm install
+```
+
+After cloning the repository and installing the dependencies, you can start the Storybook server:
+
+```bash
+npm run storybook
+```
+
+This will start the Storybook server and open it in your default web browser.
+
+For Production
+To use the components from this library in your own project, you can install it as an npm package.
+
+```bash
+npm install react-storybook-library-v3
+```
+
+After installing, you can import and use the components in your project:
+
+Example: Button
+
+```bash
+import React from 'react';
+import { Button } from 'react-storybook-library-v3';
+
+const ExampleComponent = () => (
+  <Button label="Click me" onClick={() => console.log('Button clicked')} />
+);
+
+export default ExampleComponent;
+```
+
+Example: Project Card
+
+```bash
+import React from 'react';
+import { ProjectCard } from 'react-storybook-library-v3';
+import AppleIcon from './assets/project-logo-storybook@2x.png';
+
+const ExampleProjectCard = () => (
+  <ProjectCard
+    title="Project Title"
+    description="Description"
+    tech="React, CSS, Storybook"
+    codeLink="https://github.com"
+    visitLink="https://example.com"
+    icon={AppleIcon}
+  />
+);
+
+export default ExampleProjectCard;
+```

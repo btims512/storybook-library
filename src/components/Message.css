@@ -1,8 +1,7 @@
 .message {
   padding: var(--s-24);
   border-radius: var(--radius-default);
-  font-family: 'SF Pro Text Regular';
-  font-size: 14px;
+  font: var(--text-label-1);
   margin: var(--s-16);
   display: flex;
   align-items: center;

@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "../components/Footer";
 
 export default {
-  title: "Components/Footer",
+  title: "Layouts/Footer",
   component: Footer,
   parameters: {
     storySort: {

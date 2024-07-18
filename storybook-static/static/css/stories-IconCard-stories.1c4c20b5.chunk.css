@@ -1,0 +1,40 @@
+.icon-card {
+  display: flex;
+  width: 183px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  gap: var(--Spacing-s8, 8px);
+  padding: 16px;
+  padding: var(--Spacing-s16, 16px);
+  border-radius: 8px;
+  border-radius: var(--Radius-default, 8px);
+}
+
+.icon-card-icon {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  fill: var(--primary-brand-icon); 
+  stroke: var(--primary-brand-icon); 
+}
+
+
+.icon-card-title {
+  color: var(--foreground-1);
+  font-family: "Titillium Web";
+  font-family: var(--font-family-semibold, "Titillium Web");
+  font-size: 16px;
+  font-size: var(--text-size-md, 16px);
+  font-weight: 600;
+  margin: 0;
+}
+
+.icon-card-description {
+  color: var(--foreground-1);
+  font: var(--text-body-1);
+  margin: 0;
+}
+
+
+/*# sourceMappingURL=stories-IconCard-stories.1c4c20b5.chunk.css.map*/

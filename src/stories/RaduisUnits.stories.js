@@ -2,7 +2,7 @@ import React from "react";
 import RadiusUnitsTable from "../components/RadiusUnits";
 
 export default {
-  title: "Guidelines/Radius",
+  title: "Design Tokens/Radius",
   component: RadiusUnitsTable,
 };
 

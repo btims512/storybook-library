@@ -20,6 +20,7 @@ const Template = (args) => {
       value={value}
       onChange={(e) => setValue(e.target.value)}
       onButtonClick={args.buttonLabel ? () => {} : null}
+      buttonVariant="btn--filled"
     />
   );
 };
@@ -35,4 +36,5 @@ WithButton.args = {
   placeholder: "Search...",
   value: "",
   buttonLabel: "Search",
+  buttonVariant: "btn--filled",
 };

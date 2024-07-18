@@ -1,0 +1,88 @@
+.tech-page-layout {
+  display: flex;
+  padding: var(--s-0) var(--s-16);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--s-24);
+  align-self: stretch;
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.section-title {
+  font: var(--text-title-2);
+  color: var(--foreground-2);
+  align-self: flex-start;
+}
+
+.tech-page-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-16);
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+
+/* Large Breakpoint */
+@media (min-width: 1024px) {
+  .tech-page-layout {
+    padding: var(--s-0) var(--s-32);
+  }
+}
+
+/* Light Mode Icon Color */
+body.light .icon-card-icon {
+  fill: #B133FF; 
+  stroke: #B133FF; 
+}
+
+/* Dark Mode Icon Color */
+body.dark .icon-card-icon {
+  fill: #F46737; 
+  stroke: #F46737; 
+}
+
+.icon-card {
+  display: flex;
+  width: 183px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  gap: var(--Spacing-s8, 8px);
+  padding: 16px;
+  padding: var(--Spacing-s16, 16px);
+  border-radius: 8px;
+  border-radius: var(--Radius-default, 8px);
+}
+
+.icon-card-icon {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  fill: var(--primary-brand-icon); 
+  stroke: var(--primary-brand-icon); 
+}
+
+
+.icon-card-title {
+  color: var(--foreground-1);
+  font-family: "Titillium Web";
+  font-family: var(--font-family-semibold, "Titillium Web");
+  font-size: 16px;
+  font-size: var(--text-size-md, 16px);
+  font-weight: 600;
+  margin: 0;
+}
+
+.icon-card-description {
+  color: var(--foreground-1);
+  font: var(--text-body-1);
+  margin: 0;
+}
+
+
+/*# sourceMappingURL=stories-TechPageLayout-stories.7006c12d.chunk.css.map*/

@@ -3,7 +3,7 @@ import About from "../components/About";
 import exampleIcon from "./assets/image-ben-2@3x.png";
 
 export default {
-  title: "Components/About",
+  title: "Layouts/About",
   component: About,
 };
 

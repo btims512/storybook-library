@@ -1,0 +1,270 @@
+.hero-outer-container {
+  display: flex;
+  padding: var(--s-0) var(--s-32); 
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--s-24);
+  align-self: stretch;
+  max-width: 1280px;
+  margin: 0 auto; 
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--s-16);
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--s-16);
+}
+
+.hero-icon {
+  font-size: 48px; 
+}
+
+.hero-header {
+  font: var(--text-large-title);
+  color: var(--foreground-1);
+}
+
+.hero-subtitle {
+  font: var(--text-headline);
+  color: var(--foreground-2);
+}
+
+.hero-button {
+  margin-top: var(--s-16);
+}
+
+.hero-right {
+  position: relative; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%; 
+  overflow: hidden; 
+}
+
+.background-animation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px; 
+  height: 500px; 
+  z-index: 0; 
+}
+
+.hero-picture {
+  width: 320px; 
+  height: 320px; 
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid var(--gradient);
+  position: relative;
+  z-index: 1; 
+}
+
+/* Small Breakpoint */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: var(--s-0);
+  }
+
+  .hero-left {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-header,
+  .hero-subtitle {
+    text-align: center;
+  }
+
+  .hero-button {
+    margin-top: var(--s-16);
+    text-align: center;
+  }
+
+  .background-animation {
+    width: 500px; 
+    height: 500px; 
+  }
+
+  .hero-picture {
+    width: 320px; 
+    height: 320px; 
+  }
+}
+
+/* Medium Breakpoint */
+@media (min-width: 769px) and (max-width: 1023px) {
+  .hero-outer-container {
+    padding: var(--s-0) var(--s-16);
+  }
+
+  .background-animation {
+    width: 400px; 
+    height: 400px; 
+  }
+
+  .hero-picture {
+    width: 280px; 
+    height: 280px; 
+  }
+
+  .hero-subtitle {
+    padding-left: 2px;
+  }
+}
+
+/* Large Breakpoint */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .background-animation {
+    width: 400px; 
+    height: 400px; 
+  }
+
+  .hero-picture {
+    width: 280px; 
+    height: 280px; 
+  }
+
+  .hero-subtitle {
+    padding-left: 2px;
+  }
+}
+
+/* Content Max Width */
+@media (min-width: 1440px) {
+  .hero-subtitle {
+    padding-left: 2px;
+  }
+}
+
+/* Button.css */
+.btn {
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5em 1em;
+  border-radius: var(--radius-default);
+  font-family: var(--font-family-regular);
+  font-size: var(--button-font-size); /* Use the new variable for font size */
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn--filled {  
+  display: inline-flex;
+  padding: var(--s-12) var(--s-24);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--primary-brand); /* Uses --primary-brand */
+  border-radius: var(--radius-round);
+  color: var(--background-1);
+}
+
+.btn--filled:hover {  
+  background-color: var(--foreground-1);
+}
+
+.btn--outlined {
+  display: inline-flex;
+  padding: var(--s-12) var(--s-24);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: var(--radius-round);
+  border: 1px solid var(--primary-brand);
+  background-color: #FFF; /* color not mapped to var for SB purposes */
+  color: var(--primary-brand); 
+}
+
+.btn--outlined:hover {
+  border: 1px solid var(--foreground-1);
+  background-color: var(--background-2);
+  color: var(--foreground-1);
+}
+
+.btn--ghost {
+  display: inline-flex;
+  padding: var(--s-12) var(--s-24);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: var(--radius-round);
+  background-color: #FFF; /* color not mapped to var for SB purposes */
+  color: var(--primary-brand);
+}
+
+.btn--ghost:hover {
+  background-color: var(--background-2);
+  color: var(--foreground-1);
+}
+
+.btn--reversed {
+  background-color: var(--background-1); 
+  color: var(--primary-brand); 
+}
+
+.btn--reversed:hover {
+  background-color: var(--background-1);
+  color: var(--primary-brand); 
+}
+
+/* Dark Mode Styles */
+body.dark .btn--filled {
+  background-color: var(--primary-brand); /* Dark mode primary color */
+}
+
+body.dark .btn--filled:hover {
+  background-color: var(--foreground-1); /* Hover background for filled button in dark mode */
+}
+
+body.dark .btn--outlined {
+  border: 1px solid var(--primary-brand); /* Dark mode primary color */
+  background-color: var(--background-1);
+  color: var(--primary-brand);
+  height: 40px;
+}
+
+body.dark .btn--outlined:hover {
+  background-color: var(--background-2); /* Dark mode primary color */
+  border: 1px solid var( --foreground-1);
+  color: var(--foreground-1);
+  height: 40px;
+}
+
+body.dark .btn--ghost {
+  color: var(--primary-brand);
+  background-color: var(--background-1);
+}
+
+body.dark .btn--ghost:hover {
+  background-color: var(--background-2);
+  color: var(--primary-brand);
+}
+
+.btn.label-1 {
+  font-family: var(--font-family-regular);
+  font-size: var(--button-font-size); /* Use the new variable for font size */
+}
+
+
+/*# sourceMappingURL=stories-Hero-stories.040e4a6e.chunk.css.map*/

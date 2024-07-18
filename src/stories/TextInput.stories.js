@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import TextInput from "../components/TextInput";
+import TextInput, { TextAreaInput } from "../components/TextInput";
 import "../components/TextInput.css";
 
 export default {
@@ -43,5 +43,23 @@ const Template = ({ count, ...args }) => {
 export const Default = Template.bind({});
 Default.args = {
   count: 1,
-  placeholder: "",
+  placeholder: "Enter your text here...",
+};
+
+const ParagraphTemplate = (args) => {
+  const [value, setValue] = useState("");
+
+  return (
+    <TextAreaInput
+      value={value}
+      placeholder={args.placeholder}
+      onChange={(event) => setValue(event.target.value)}
+      {...args}
+    />
+  );
+};
+
+export const ParagraphInput = ParagraphTemplate.bind({});
+ParagraphInput.args = {
+  placeholder: "Enter your paragraph here...",
 };

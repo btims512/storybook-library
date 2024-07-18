@@ -5,7 +5,7 @@ import Text from "../components/Text";
 import Button from "../components/Button";
 
 export default {
-  title: "Guidelines/Layouts",
+  title: "Layouts/Row Layout",
   component: FlexibleLayout,
   argTypes: {
     rows: { control: { type: "number", min: 1, max: 10 } },
@@ -73,7 +73,7 @@ const Template = (args) => {
   return <FlexibleLayout {...args}>{renderLayoutContent()}</FlexibleLayout>;
 };
 
-export const RowLayout = Template.bind({});
-RowLayout.args = {
+export const Row = Template.bind({});
+Row.args = {
   rows: 1,
 };

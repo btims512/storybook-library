@@ -1,0 +1,28 @@
+.icon-tab {
+  border: none;
+  border-radius: var(--radius-default);
+  background-color: var(--background-1);
+  padding: var(--s-4);
+  gap: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-tab--active {
+  background-color: var(--foreground-1);
+}
+
+.icon-tab svg {
+  fill: black;
+  width: 32px; 
+}
+
+.icon-tab--active svg {
+  fill: white; 
+  width: 32px; 
+  height: 32px;
+}
+
+
+/*# sourceMappingURL=stories-IconTab-stories.66a19849.chunk.css.map*/

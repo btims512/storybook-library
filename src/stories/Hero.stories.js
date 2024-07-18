@@ -5,7 +5,7 @@ import Button from "../components/Button";
 import imageBen from "./assets/image-ben-1@3x.png";
 
 export default {
-  title: "Components/Hero",
+  title: "Layouts/Hero",
   component: Hero,
 };
 

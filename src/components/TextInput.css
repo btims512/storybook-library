@@ -17,3 +17,15 @@
   gap: 10px;
 }
 
+.text-area-input {
+  box-sizing: border-box; 
+  outline-color: var(--primary-brand);
+  width: 220px;
+  height: 120px; 
+  padding: 8px 16px;
+  border: 1px solid var(--border-1);
+  color: var(--black); 
+  background-color: var(--background-2);
+  gap: 10px;
+  /* border-radius mapped to .radius-default class */
+}

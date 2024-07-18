@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/stories-Link-stories.6a69466b.chunk.css","mappings":"AAAA;AACA;AACA","sources":["webpack://react-storybook-library-v3/./src/components/Link.css"],"sourcesContent":[".link-component.label-1, .link-component.label-1:visited {\n  color: var(--primary-brand);\n}"],"names":[],"sourceRoot":""}
