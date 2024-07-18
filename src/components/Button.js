@@ -9,11 +9,23 @@ const Button = ({
   className,
   styleName = "radius-round",
   style,
+  size,
+  color,
+  disabled,
+  loading,
 }) => {
-  const classNames = `btn ${variant} ${className} ${styleName}`;
+  const classNames = `btn ${variant} ${className} ${styleName} ${size}`;
+  const buttonStyle = { ...style, backgroundColor: color };
+
   return (
-    <button className={`${classNames} label-1`} onClick={onClick} style={style}>
-      {label}
+    <button
+      className={`${classNames} label-1`}
+      onClick={onClick}
+      style={buttonStyle}
+      disabled={disabled}
+      aria-busy={loading}
+    >
+      {loading ? "Loading..." : label}
     </button>
   );
 };
@@ -25,6 +37,10 @@ Button.propTypes = {
   className: PropTypes.string,
   styleName: PropTypes.string,
   style: PropTypes.object,
+  size: PropTypes.oneOf(["small", "medium", "large"]),
+  color: PropTypes.string,
+  disabled: PropTypes.bool,
+  loading: PropTypes.bool,
 };
 
 Button.defaultProps = {
@@ -32,6 +48,10 @@ Button.defaultProps = {
   className: "btn-padding",
   styleName: "radius-default",
   style: {},
+  size: "medium",
+  color: "",
+  disabled: false,
+  loading: false,
 };
 
 export default Button;
@@ -43,21 +63,23 @@ export const OutlinedButton = ({
   className,
   styleName = "radius-default",
   style = {},
+  size,
+  color,
+  disabled,
+  loading,
 }) => {
-  const classNames = `btn ${variant} ${className} ${styleName}`;
-  const { outlineColor, ...restStyle } = style;
-  const buttonStyle = {
-    border: outlineColor ? `1px solid ${outlineColor}` : undefined,
-    ...restStyle,
-  };
+  const classNames = `btn ${variant} ${className} ${styleName} ${size}`;
+  const buttonStyle = { ...style, backgroundColor: color };
 
   return (
     <button
       className={`${classNames} label-1`}
       onClick={onClick}
       style={buttonStyle}
+      disabled={disabled}
+      aria-busy={loading}
     >
-      {label}
+      {loading ? "Loading..." : label}
     </button>
   );
 };
@@ -69,6 +91,10 @@ OutlinedButton.propTypes = {
   className: PropTypes.string,
   styleName: PropTypes.string,
   style: PropTypes.object,
+  size: PropTypes.oneOf(["small", "medium", "large"]),
+  color: PropTypes.string,
+  disabled: PropTypes.bool,
+  loading: PropTypes.bool,
 };
 
 OutlinedButton.defaultProps = {
@@ -76,6 +102,10 @@ OutlinedButton.defaultProps = {
   className: "btn-padding",
   styleName: "radius-default",
   style: {},
+  size: "medium",
+  color: "",
+  disabled: false,
+  loading: false,
 };
 
 export const GhostButton = ({
@@ -84,6 +114,10 @@ export const GhostButton = ({
   className,
   styleName,
   style,
+  size,
+  color,
+  disabled,
+  loading,
 }) => (
   <Button
     label={label}
@@ -92,6 +126,10 @@ export const GhostButton = ({
     className={className}
     styleName={styleName}
     style={style}
+    size={size}
+    color={color}
+    disabled={disabled}
+    loading={loading}
   />
 );
 
@@ -101,10 +139,18 @@ GhostButton.propTypes = {
   className: PropTypes.string,
   styleName: PropTypes.string,
   style: PropTypes.object,
+  size: PropTypes.oneOf(["small", "medium", "large"]),
+  color: PropTypes.string,
+  disabled: PropTypes.bool,
+  loading: PropTypes.bool,
 };
 
 GhostButton.defaultProps = {
   className: "btn-padding",
   styleName: "radius-default",
   style: {},
+  size: "medium",
+  color: "",
+  disabled: false,
+  loading: false,
 };

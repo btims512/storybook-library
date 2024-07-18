@@ -12,8 +12,6 @@ const ProjectCard = ({
   visitLink,
   icon,
 }) => {
-  console.log({ title, description, tech, codeLink, visitLink, icon }); // Add this line
-
   return (
     <div className="project-card">
       <div className="project-card-header">

@@ -1,6 +1,5 @@
 .text-default {
   margin: 0;
-  /* font-family: var(--font-family-regular); */
   color: var(--foreground-1); 
 }
 

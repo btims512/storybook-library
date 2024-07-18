@@ -1,4 +1,3 @@
-/* Button.css */
 .btn {
   border: none;
   cursor: pointer;
@@ -6,7 +5,7 @@
   padding: 0.5em 1em;
   border-radius: var(--radius-default);
   font-family: var(--font-family-regular);
-  font-size: var(--button-font-size); /* Use the new variable for font size */
+  font-size: var(--button-font-size); 
   text-align: center;
   text-decoration: none;
   transition: background-color 0.3s ease;
@@ -18,7 +17,7 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  background-color: var(--primary-brand); /* Uses --primary-brand */
+  background-color: var(--primary-brand); 
   border-radius: var(--radius-round);
   color: var(--background-1);
 }
@@ -35,7 +34,7 @@
   gap: 10px;
   border-radius: var(--radius-round);
   border: 1px solid var(--primary-brand);
-  background-color: #FFF; /* color not mapped to var for SB purposes */
+  background-color: #FFF; 
   color: var(--primary-brand); 
 }
 
@@ -52,7 +51,7 @@
   align-items: center;
   gap: 10px;
   border-radius: var(--radius-round);
-  background-color: #FFF; /* color not mapped to var for SB purposes */
+  background-color: #FFF; 
   color: var(--primary-brand);
 }
 
@@ -73,22 +72,22 @@
 
 /* Dark Mode Styles */
 body.dark .btn--filled {
-  background-color: var(--primary-brand); /* Dark mode primary color */
+  background-color: var(--primary-brand); 
 }
 
 body.dark .btn--filled:hover {
-  background-color: var(--foreground-1); /* Hover background for filled button in dark mode */
+  background-color: var(--foreground-1); 
 }
 
 body.dark .btn--outlined {
-  border: 1px solid var(--primary-brand); /* Dark mode primary color */
+  border: 1px solid var(--primary-brand); 
   background-color: var(--background-1);
   color: var(--primary-brand);
   height: 40px;
 }
 
 body.dark .btn--outlined:hover {
-  background-color: var(--background-2); /* Dark mode primary color */
+  background-color: var(--background-2); 
   border: 1px solid var( --foreground-1);
   color: var(--foreground-1);
   height: 40px;
@@ -106,5 +105,18 @@ body.dark .btn--ghost:hover {
 
 .btn.label-1 {
   font-family: var(--font-family-regular);
-  font-size: var(--button-font-size); /* Use the new variable for font size */
+  font-size: var(--button-font-size); 
+}
+
+/* Size Variants */
+.btn.small {
+  padding: var(--s-4) var(--s-8);
+}
+
+.btn.medium {
+  padding: var(--s-8) var(--s-16);
+}
+
+.btn.large {
+  padding: var(--s-16) var(--s-32);
 }

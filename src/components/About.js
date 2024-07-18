@@ -5,7 +5,7 @@ import "./About.css";
 const About = ({ title, text, icon }) => {
   return (
     <div className="about">
-      <div className="about-content"> {/* This div centers the content */}
+      <div className="about-content">
         <div className="about-text">
           <h1 className="about-title">{title}</h1>
           {text.map((paragraph, index) => (

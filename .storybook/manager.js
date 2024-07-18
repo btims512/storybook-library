@@ -1,4 +1,4 @@
-// manger.js
+// manager.js
 import { addons } from "@storybook/manager-api";
 import { create } from "@storybook/theming";
 
@@ -8,7 +8,7 @@ addons.setConfig({
     brandUrl: "https://bentims.com",
     brandImage: "/logo-bt-wordmark.svg",
     brandTarget: "_self",
-    colorSecondary: "#A311FD",
+    colorSecondary: "#708090",
     appBorderColor: "#cccccc",
     barTextColor: "#666666",
   }),

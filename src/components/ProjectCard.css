@@ -6,7 +6,6 @@
   align-items: flex-start;
   gap: var(--s-24);
   border-radius: var(--radius-card);
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   box-sizing: border-box;
 }
 
@@ -17,7 +16,7 @@ body.light .project-card {
 
 /* Dark Mode */
 body.dark .project-card {
-  background: var(--dark-gradient); /* Use the corrected dark gradient variable */
+  background: var(--dark-gradient); 
 }
 
 .project-card-header {
