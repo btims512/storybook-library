@@ -16,6 +16,9 @@
   --svg-background-dark: black;
   --svg-fill-dark: white;
 
+  --logo-color-light: black;
+  --logo-color-dark: white;
+
   /* Spacing Units */
   --s-0: 0px;
   --s-4: 4px;
@@ -58,6 +61,9 @@
 
   /* Button font */
   --button-font-size: 14px;
+
+  /* SVG fill variable */
+  --svg-fill: var(--foreground-2); /* Default fill color */
 }
 
 /* Light Mode */
@@ -72,7 +78,7 @@ body.light {
   --gradient: linear-gradient(to right, #13ADC7, #B133FF);
   background-color: var(--background-2);
   --svg-background: var(--svg-background-light);
-  --svg-fill: var(--svg-fill-light);
+  --svg-fill: var(--svg-fill-light); /* Light mode fill color */
 }
 
 /* Dark Mode */
@@ -88,7 +94,7 @@ body.dark {
   background-color: var(--background-1);
   --dark-gradient: linear-gradient(180deg, var(--background-2) 0%, var(--background-1) 100%);
   --svg-background: var(--svg-background-dark);
-  --svg-fill: var(--svg-fill-dark);
+  --svg-fill: var(--svg-fill-dark); /* Dark mode fill color */
 }
 
 /* SVG Hover States */
