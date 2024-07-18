@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
 import PropTypes from "prop-types";
 import "./NavBar.css";
+import logo from "../stories/assets/logo-bt-wordmark.svg";
 
 const NavBar = ({ links }) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,6 +15,7 @@ const NavBar = ({ links }) => {
     <div className="nav-bar">
       <div className="nav-content">
         <div className="left-content">
+          <img src={logo} alt="Logo" className="nav-logo" />
           <nav className="nav-links">
             {links.map((link, index) => (
               <a key={index} href={link.href} className="nav-link label-1">
@@ -23,7 +25,11 @@ const NavBar = ({ links }) => {
           </nav>
           <nav className={`side-menu ${menuOpen ? "open" : ""}`}>
             {links.map((link, index) => (
-              <a key={index} href={link.href} className="side-nav-link headline">
+              <a
+                key={index}
+                href={link.href}
+                className="side-nav-link headline"
+              >
                 {link.label}
               </a>
             ))}

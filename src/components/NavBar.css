@@ -49,6 +49,12 @@ body, html {
   align-items: center;
 }
 
+.nav-logo {
+  height: 40px; /* Adjust the size as needed */
+  margin-right: 16px; /* Ensure spacing is consistent with other elements */
+}
+
+
 .hamburger {
   display: none;
   cursor: pointer;

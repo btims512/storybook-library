@@ -123,6 +123,12 @@ body, html {
   align-items: center;
 }
 
+.nav-logo {
+  height: 40px; /* Adjust the size as needed */
+  margin-right: 16px; /* Ensure spacing is consistent with other elements */
+}
+
+
 .hamburger {
   display: none;
   cursor: pointer;
@@ -984,7 +990,7 @@ body.dark .btn--ghost:hover {
 
 .about {
   display: flex;
-  justify-content: center; /* Centers the inner content div horizontally */
+  justify-content: center; 
   background: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.5) 0%,
@@ -998,9 +1004,9 @@ body.dark .btn--ghost:hover {
   flex-direction: column-reverse;
   align-items: center;
   gap: var(--s-16);
-  padding: var(--s-40) var(--s-24); /* Vertical and horizontal padding */
-  max-width: 1280px; /* Maximum width constraint for content */
-  width: 100%; /* Takes full width up to max-width */
+  padding: var(--s-40) var(--s-24); 
+  max-width: 1280px; 
+  width: 100%; 
 }
 
 .about-title {
@@ -1033,7 +1039,7 @@ body.dark .btn--ghost:hover {
   .about-content {
     flex-direction: row-reverse;
     justify-content: space-between;
-    align-items: center; /* Ensures vertical centering of children */
+    align-items: center; 
   }
 
   .about-text {
@@ -1135,4 +1141,4 @@ body.dark .icon-card-icon {
 }
 
 
-/*# sourceMappingURL=stories-PageLayout-stories.0a94b367.chunk.css.map*/
+/*# sourceMappingURL=stories-PageLayout-stories.e2e35dc4.chunk.css.map*/
