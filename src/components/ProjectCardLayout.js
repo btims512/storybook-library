@@ -10,13 +10,18 @@ const ProjectCardLayout = ({ projects }) => {
       <div className="section-title">Projects</div>
       <div className="card-container">
         {projects.map((project, index) => {
+          // Ensure project.tech is an array before calling join
+          const techString = Array.isArray(project.tech)
+            ? project.tech.join(", ")
+            : "";
+
           if (index === 0) {
             return (
               <NdaProjectCard
                 key={index}
                 title={project.title}
                 description={project.description}
-                tech={project.tech}
+                tech={techString} // Use the joined string here
                 icon={project.icon}
               />
             );
@@ -26,7 +31,7 @@ const ProjectCardLayout = ({ projects }) => {
               key={index}
               title={project.title}
               description={project.description}
-              tech={project.tech}
+              tech={techString} // Use the joined string here
               codeLink={project.codeLink}
               visitLink={project.visitLink}
               icon={project.icon}
@@ -43,7 +48,7 @@ ProjectCardLayout.propTypes = {
     PropTypes.shape({
       title: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
-      tech: PropTypes.string.isRequired,
+      tech: PropTypes.arrayOf(PropTypes.string).isRequired,
       codeLink: PropTypes.string.isRequired,
       visitLink: PropTypes.string.isRequired,
       icon: PropTypes.string,
