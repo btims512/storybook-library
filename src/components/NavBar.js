@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from "react";
-import ThemeSwitcher from "./ThemeSwitcher";
 import PropTypes from "prop-types";
+import ThemeSwitcher from "./ThemeSwitcher";
 import "./NavBar.css";
-import logoLight from "../stories/assets/logo-bt-wordmark.svg";
-import logoDark from "../stories/assets/logo-bt-wordmark-white.svg";
+import defaultLogoLight from "../stories/assets/logo-bt-wordmark.svg";
+import defaultLogoDark from "../stories/assets/logo-bt-wordmark-white.svg";
 
-const NavBar = ({ links }) => {
+const NavBar = ({
+  links,
+  logoLight = defaultLogoLight,
+  logoDark = defaultLogoDark,
+}) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [logo, setLogo] = useState(logoLight);
 
@@ -23,7 +27,6 @@ const NavBar = ({ links }) => {
       setLogo(isDarkMode ? logoDark : logoLight);
     };
     updateLogo();
-
     const observer = new MutationObserver(updateLogo);
     observer.observe(document.body, {
       attributes: true,
@@ -31,7 +34,7 @@ const NavBar = ({ links }) => {
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, [logoLight, logoDark]);
 
   return (
     <div className="nav-bar">
@@ -87,6 +90,8 @@ NavBar.propTypes = {
       label: PropTypes.string.isRequired,
     })
   ).isRequired,
+  logoLight: PropTypes.string,
+  logoDark: PropTypes.string,
 };
 
 export default NavBar;

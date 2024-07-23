@@ -36,13 +36,13 @@ export default {
     commonjs(),
     postcss({
       extensions: [".css"],
-      extract: false, // Extract CSS to a separate file
+      extract: false,
     }),
     mdx(),
     url({
       include: ["**/*.svg", "**/*.png", "**/*.jpg", "**/*.jpeg"],
-      limit: 0, // Always include files as base64 data
-      emitFiles: true, // Emit files to the output directory
+      limit: 0,
+      emitFiles: true,
     }),
     svgr(),
     terser(),

@@ -13,11 +13,11 @@
   /* SVG Colors */
   --svg-background-light: white;
   --svg-fill-light: var(--foreground-2);
-  --svg-background-dark: black;
-  --svg-fill-dark: white;
+  --svg-background-dark: var(--foreground-1);
+  --svg-fill-dark: var(--foreground-2);
 
-  --logo-color-light: black;
-  --logo-color-dark: white;
+  --logo-color-light: var(--foreground-1);
+  --logo-color-dark: var(--background-1);
 
   /* Spacing Units */
   --s-0: 0px;
@@ -79,7 +79,7 @@ body.light {
   background-color: #F3F3F3;
   background-color: var(--background-2);
   --svg-background: var(--svg-background-light);
-  --svg-fill: var(--svg-fill-light); /* Light mode fill color */
+  --svg-fill: var(--svg-fill-light); 
 }
 
 /* Dark Mode */
@@ -96,7 +96,7 @@ body.dark {
   background-color: var(--background-1);
   --dark-gradient: linear-gradient(180deg, var(--background-2) 0%, var(--background-1) 100%);
   --svg-background: var(--svg-background-dark);
-  --svg-fill: var(--svg-fill-dark); /* Dark mode fill color */
+  --svg-fill: var(--svg-fill-dark); 
 }
 
 /* SVG Hover States */
@@ -237,4 +237,4 @@ body.dark .icon-container a:hover svg {
 }
 
 
-/*# sourceMappingURL=main.ca61dbba.css.map*/
+/*# sourceMappingURL=main.f5fe4006.css.map*/

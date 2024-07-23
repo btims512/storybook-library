@@ -123,11 +123,22 @@ body, html {
   align-items: center;
 }
 
-.nav-logo {
-  height: 40px; 
-  margin-right: 16px; 
+.logo-container {
+  display: flex;
+  align-items: center;
 }
 
+.navbar-logo {
+  width: 122.25px;
+  height: 24px;
+  max-width: 100%;
+}
+
+.divider {
+  height: 24px;
+  border-left: 1px solid var(--border-1);
+  margin-left: 16px; 
+}
 
 .hamburger {
   display: none;
@@ -150,7 +161,6 @@ body, html {
   transition: all 0.3s;
   border-radius: 4px; 
 }
-
 
 .hamburger:before {
   top: 0;
@@ -188,6 +198,7 @@ body, html {
   flex-grow: 1;
   color: var(--foreground-2);
   gap: 10px;
+  margin-left: 16px; 
 }
 
 .nav-link:last-child {
@@ -215,7 +226,7 @@ body, html {
   justify-content: start;
   gap: var(--s-40);
   padding-top: var(--s-80);
-  transition: right 0.3s ease-in-out;
+  transition: right 0.3s ease-in-out; 
   z-index: 20;
 }
 
@@ -253,94 +264,19 @@ body, html {
   margin-left: 16px;
 }
 
-/* Small Breakpoint */
-@media (max-width: 768px) {
-  .nav-content {
-    padding: 0 16px;
-  }
-
-  .hamburger {
-    display: block;
-    margin-left: auto;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  .side-menu {
-    display: flex;
-  }
-
-  .icon-placeholder {
-    display: none;
-  }
-}
-
-/* Medium Breakpoint */
-@media (min-width: 769px) and (max-width: 1023px) {
-  .nav-content {
-    padding: 0 16px;
-  }
-
-  .hamburger {
-    display: none;
-  }
-
-  .nav-links {
-    display: flex;
-  }
-
-  .side-menu {
-    display: none; 
-  }
-}
-
-/* Large Breakpoint */
-@media (min-width: 1024px) {
-  .nav-content {
-    padding: 0 40px;
-  }
-
-  .nav-link {
-    margin-right: 16px;
-  }
-
-  .hamburger {
-    display: none;
-  }
-
-  .nav-links {
-    display: flex;
-  }
-
-  .side-menu {
-    display: none; 
-  }
-}
-
-/* Content Max Width */
-@media (min-width: 1440px) {
-  .nav-content {
-    padding: 0;
-  }
-}
-
-.nav-link,
-.side-nav-link,
-.icon-placeholder {
-  font: var(--text-body-1);
-  /* padding: 12px; */
-  /* margin-left: -50px; */
-}
-
-/* Theme Switcher styles */
+/* Hide switch when side menu open */
 .switch {
   position: relative;
   display: inline-block;
   width: 35px;
   height: 20px;
   margin-left: 16px;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; 
+}
+
+.switch-hidden {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .switch input {
@@ -379,6 +315,114 @@ input:checked + .slider {
 
 input:checked + .slider:before {
   transform: translateX(20px);
+}
+
+/* Small Breakpoint */
+@media (max-width: 768px) {
+  .nav-content {
+    padding: 0 16px;
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: auto;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .side-menu {
+    display: flex;
+  }
+
+  .icon-placeholder {
+    display: none;
+  }
+
+  .navbar-logo {
+    width: 100px; 
+    margin-right: 10px;
+  }
+}
+
+/* Medium Breakpoint */
+@media (min-width: 769px) and (max-width: 1023px) {
+  .nav-content {
+    padding: 0 16px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+
+  .side-menu {
+    display: none; 
+  }
+
+  .navbar-logo {
+    width: 100px; 
+    margin-right: 12px;
+  }
+}
+
+/* Large Breakpoint */
+@media (min-width: 1024px) {
+  .nav-content {
+    padding: 0 40px;
+  }
+
+  .nav-link {
+    margin-right: 16px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+
+  .side-menu {
+    display: none; 
+  }
+
+  .navbar-logo {
+    width: 122.25px; 
+    height: 24px; 
+  }
+
+  .divider {
+    height: 24px;
+    border-left: 1px solid var(--border-1);
+    margin-left: 16px; 
+  }
+
+  .nav-links {
+    margin-left: 24px; 
+  }
+}
+
+/* Content Max Width */
+@media (min-width: 1440px) {
+  .nav-content {
+    padding: 0;
+  }
+}
+
+.nav-link,
+.side-nav-link,
+.icon-placeholder {
+  font: var(--text-body-1);
 }
 
 .footer-outer-container {
@@ -1153,4 +1197,4 @@ body.dark .icon-card-icon {
 }
 
 
-/*# sourceMappingURL=stories-PageLayout-stories.930586f8.chunk.css.map*/
+/*# sourceMappingURL=stories-PageLayout-stories.bd9051ba.chunk.css.map*/
