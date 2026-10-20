@@ -1,7 +1,3 @@
-import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
-
-<Meta title="Introduction/Welcome" />
-
 # Welcome to My Storybook Component Library 🌟
 
 ## Discover My Journey with Storybook
@@ -9,6 +5,17 @@ import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
 Hello! I’m excited to present my Storybook Component Library, a project born from my passion to learn and master Storybook as a powerful tool for building and showcasing UI components. This library not only demonstrates my ability to utilize advanced frontend technologies but also serves as a portfolio to potential employers looking to understand my skills and capabilities in real-world applications.
 
 ![Banner Image](public/sb-banner.jpg)
+
+## Live Storybook
+
+Browse every component, layout, and design token: https://main--6698136741a8af33d6e341ed.chromatic.com/?path=/docs/introduction--docs
+
+## What's Inside
+
+- 16 components, including Accordion, Buttons, Dropdown, Modal, NavBar, SearchBar, Tabs, and Tooltip
+- 9 page layouts, including Hero, Footer, Grid Layout, and PageTemplate
+- Design tokens for color, radius, spacing, and text
+- 43 stories, published with Chromatic
 
 ### Why This Project?
 
@@ -27,6 +34,7 @@ This project was built using a robust set of technologies chosen for their popul
 - **React**: Utilized for its powerful component-based architecture.
 - **Storybook**: Chosen for its excellent UI component visualization and testing capabilities.
 - **CSS/SASS**: Employed to style components elegantly and responsively.
+- **Chromatic**: Used to publish and host the Storybook.
 
 ## Installation
 
